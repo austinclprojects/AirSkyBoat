@@ -17,7 +17,7 @@ zones[xi.zone.ROMAEVE] =
         NOTHING_OUT_OF_ORDINARY  = 6404,  -- There is nothing out of the ordinary here.
         FELLOW_MESSAGE_OFFSET    = 6419,  -- I'm ready. I suppose.
         CARRIED_OVER_POINTS      = 7001,  -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY  = 7002,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY  = 7002,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER             = 7003,  -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         CONQUEST_BASE            = 7057,  -- Tallying conquest results...
         FISHING_MESSAGE_OFFSET   = 7216,  -- You can't fish here.
@@ -65,7 +65,6 @@ zones[xi.zone.ROMAEVE] =
             [9] = { -105.000, -3.000,  -36.000}, -- E-9
             [10] = { -160.000, -6.000, -107.000}  -- D-10
         },
-        CASKET_BASE     = 17277171,
         MOONGATE_OFFSET = 17277195,
         BASTOK_7_1_QM   = 17277207,
     },

@@ -19,7 +19,7 @@ zones[xi.zone.PASHHOW_MARSHLANDS] =
         NOTHING_OUT_OF_ORDINARY  = 6426,  -- There is nothing out of the ordinary here.
         FELLOW_MESSAGE_OFFSET    = 6441,  -- I'm ready. I suppose.
         CARRIED_OVER_POINTS      = 7023,  -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY  = 7024,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY  = 7024,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER             = 7025,  -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         CONQUEST_BASE            = 7079,  -- Tallying conquest results...
         BEASTMEN_BANNER          = 7160,  -- There is a beastmen's banner.
@@ -28,6 +28,7 @@ zones[xi.zone.PASHHOW_MARSHLANDS] =
         FIND_NOTHING             = 7253,  -- You dig and you dig, but find nothing.
         AMK_DIGGING_OFFSET       = 7319,  -- You spot some familiar footprints. You are convinced that your moogle friend has been digging in the immediate vicinity.
         CONQUEST                 = 7927,  -- You've earned conquest points!
+        GARRISON_BASE            = 8306,  -- Hm? What is this? %? How do I know this is not some [San d'Orian/Bastokan/Windurstian] trick?
         PLAYER_OBTAINS_ITEM      = 8476,  -- <name> obtains <item>!
         UNABLE_TO_OBTAIN_ITEM    = 8477,  -- You were unable to obtain the item.
         PLAYER_OBTAINS_TEMP_ITEM = 8478,  -- <name> obtains the temporary item: <item>!
@@ -65,6 +66,9 @@ zones[xi.zone.PASHHOW_MARSHLANDS] =
         },
 
         BOWHO_WARMONGER = 17224104,
+        BOWHO_GUARD1    = 17224105,
+        BOWHO_GUARD2    = 17224106,
+        TOXIC_TAMLYN    = 17223982,
 
         VOIDWALKER  =
         {
@@ -113,7 +117,6 @@ zones[xi.zone.PASHHOW_MARSHLANDS] =
 
     npc =
     {
-        CASKET_BASE   = 17224275,
         OVERSEER_BASE = 17224326, -- Mesachedeau_RK in npc_list
     },
 }

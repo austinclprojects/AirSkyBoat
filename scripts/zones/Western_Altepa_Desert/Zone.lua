@@ -1,16 +1,14 @@
 -----------------------------------
---
 -- Zone: Western_Altepa_Desert (125)
---
 -----------------------------------
-local ID = require("scripts/zones/Western_Altepa_Desert/IDs")
-require("scripts/quests/i_can_hear_a_rainbow")
-require("scripts/globals/chocobo_digging")
-require("scripts/globals/conquest")
-require("scripts/globals/world")
-require("scripts/globals/zone")
-require("scripts/globals/beastmentreasure")
-require("scripts/missions/amk/helpers")
+local ID = require('scripts/zones/Western_Altepa_Desert/IDs')
+require('scripts/quests/i_can_hear_a_rainbow')
+require('scripts/globals/chocobo_digging')
+require('scripts/globals/conquest')
+require('scripts/globals/world')
+require('scripts/globals/zone')
+require('scripts/globals/beastmentreasure')
+require('scripts/missions/amk/helpers')
 -----------------------------------
 local zone_object = {}
 
@@ -27,6 +25,9 @@ end
 
 zone_object.onGameDay = function()
     xi.bmt.updatePeddlestox(xi.zone.WESTERN_ALTEPA_DESERT, ID.npc.PEDDLESTOX)
+
+    -- Chocobo Digging.
+    SetServerVariable("[DIG]ZONE125_ITEMS", 0)
 end
 
 zone_object.onZoneIn = function(player, prevZone)
@@ -41,7 +42,7 @@ zone_object.onZoneIn = function(player, prevZone)
     end
 
     -- AMK06/AMK07
-    if xi.settings.ENABLE_AMK == 1 then
+    if xi.settings.main.ENABLE_AMK == 1 then
         xi.amk.helpers.tryRandomlyPlaceDiggingLocation(player)
     end
 
@@ -65,13 +66,31 @@ zone_object.onEventFinish = function(player, csid, option)
 end
 
 zone_object.onZoneWeatherChange = function(weather)
-    local kvMob = GetMobByID(ID.mob.KING_VINEGARROON)
-
-    if kvMob:getCurrentAction() == xi.act.DESPAWN and (weather == xi.weather.DUST_STORM or weather == xi.weather.SAND_STORM) then
-        kvMob:spawn()
-    elseif kvMob:getCurrentAction() == xi.act.ROAMING and weather ~= xi.weather.DUST_STORM and weather ~= xi.weather.SAND_STORM then
-        DespawnMob(ID.mob.KING_VINEGARROON)
+    if xi.settings.main.ENABLE_WOTG == 1 then
+        local dahu = GetMobByID(ID.mob.DAHU)
+        if
+            not dahu:isSpawned() and os.time() > dahu:getLocalVar("cooldown") and
+            (weather == xi.weather.DUST_STORM or weather == xi.weather.SAND_STORM)
+        then
+            DisallowRespawn(dahu:getID(), false)
+            dahu:setRespawnTime(math.random(30, 150)) -- pop 30-150 sec after wind weather starts
+        end
     end
+
+    local kingV = GetMobByID(ID.mob.KING_VINEGARROON)
+    local kvre = kingV:getLocalVar("respawn")
+    if not kingV:isSpawned() and os.time() > kvre and weather == xi.weather.DUST_STORM then
+        -- 10% chance for KV pop at start of single earth weather
+        local chance = math.random(1, 10)
+        if chance == 1 then
+            DisallowRespawn(kingV:getID(), false)
+            SpawnMob(ID.mob.KING_VINEGARROON)
+        end
+    elseif not kingV:isSpawned() and os.time() > kvre and weather == xi.weather.SAND_STORM then
+        DisallowRespawn(kingV:getID(), false)
+        SpawnMob(ID.mob.KING_VINEGARROON)
+    end
+
 end
 
 return zone_object

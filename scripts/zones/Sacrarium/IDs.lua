@@ -17,7 +17,7 @@ zones[xi.zone.SACRARIUM] =
         KEYITEM_OBTAINED          = 6393, -- Obtained key item: <keyitem>.
         NOTHING_OUT_OF_ORDINARY   = 6404, -- There is nothing out of the ordinary here.
         CARRIED_OVER_POINTS       = 7001, -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY   = 7002, -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY   = 7002, -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER              = 7003, -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         CONQUEST_BASE             = 7057, -- Tallying conquest results...
         LARGE_KEYHOLE_DESCRIPTION = 7223, -- The gate is securely closed with two locks. This keyhole is engraved with a sealion insignia.
@@ -36,6 +36,7 @@ zones[xi.zone.SACRARIUM] =
         HEART_RACING              = 7369, -- Your heart is racing.
         LEAVE_QUICKLY_AS_POSSIBLE = 7370, -- Your common sense tells you to leave as quickly as possible.
         NOTHING_HAPPENS           = 7373, -- Nothing happens.
+        PRESENCE_FILLS            = 7375, -- An evil presence fills the room!
         COMMON_SENSE_SURVIVAL     = 7377, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
@@ -49,6 +50,7 @@ zones[xi.zone.SACRARIUM] =
             {16892074, {[xi.race.GALKA]    = true}},                             -- Indich (galka)
         },
         OLD_PROFESSOR_MARISELLE = 16891970,
+        ELEL                    = 16891948,
     },
     npc =
     {

@@ -19,7 +19,7 @@ zones[xi.zone.WESTERN_ALTEPA_DESERT] =
         NOTHING_OUT_OF_ORDINARY    = 6404,  -- There is nothing out of the ordinary here.
         FELLOW_MESSAGE_OFFSET      = 6419,  -- I'm ready. I suppose.
         CARRIED_OVER_POINTS        = 7001,  -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY    = 7002,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY    = 7002,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER               = 7003,  -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         CONQUEST_BASE              = 7057,  -- Tallying conquest results...
         FISHING_MESSAGE_OFFSET     = 7216,  -- You can't fish here.
@@ -52,11 +52,9 @@ zones[xi.zone.WESTERN_ALTEPA_DESERT] =
         {
             [17289637] = 17289638,
         },
-
         CACTUAR_CANTAUTOR_PH =
         {
             [17289559] = 17289560, -- -458.944 0.018 -557.266
-            [17289578] = 17289560, -- -478.142 -0.457 -596.091
         },
         CELPHIE_PH           =
         {
@@ -79,10 +77,10 @@ zones[xi.zone.WESTERN_ALTEPA_DESERT] =
         EASTERN_SPHINX       = 17289654,
         WESTERN_SPHINX       = 17289655,
         MAHARAJA             = 17289656,
+        DAHU                 = 17289323,
     },
     npc =
     {
-        CASKET_BASE       = 17289723,
         ALTEPA_GATE       = 17289747,
         PEDDLESTOX        = 17289772,
         BEASTMEN_TREASURE =

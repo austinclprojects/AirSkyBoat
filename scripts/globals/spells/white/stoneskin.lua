@@ -12,7 +12,11 @@ require("scripts/globals/utils")
 local spell_object = {}
 
 spell_object.onMagicCastingCheck = function(caster, target, spell)
-    return 0
+    if caster:isMob() and target:hasStatusEffect(xi.effect.STONESKIN) then
+        return 1
+    else
+        return 0
+    end
 end
 
 spell_object.onSpellCast = function(caster, target, spell)
@@ -28,8 +32,8 @@ spell_object.onSpellCast = function(caster, target, spell)
     end
 
     -- hard cap of 350 from natural power
-    -- pAbs = utils.clamp(1, xi.settings.STONESKIN_CAP) This just always sets it to 350, let's use the actual value, shall we?
-    pAbs = utils.clamp(pAbs, 1, xi.settings.STONESKIN_CAP)
+    -- pAbs = utils.clamp(1, xi.settings.main.STONESKIN_CAP) This just always sets it to 350, let's use the actual value, shall we?
+    pAbs = utils.clamp(pAbs, 1, xi.settings.main.STONESKIN_CAP)
 
     local duration = calculateDuration(300, spell:getSkillType(), spell:getSpellGroup(), caster, target)
     duration = calculateDurationForLvl(duration, 28, target:getMainLvl())

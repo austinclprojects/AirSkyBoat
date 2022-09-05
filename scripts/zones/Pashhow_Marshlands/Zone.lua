@@ -1,13 +1,13 @@
 -----------------------------------
 -- Zone: Pashhow_Marshlands (109)
 -----------------------------------
-local ID = require("scripts/zones/Pashhow_Marshlands/IDs")
-require("scripts/quests/i_can_hear_a_rainbow")
-require("scripts/globals/chocobo_digging")
-require("scripts/globals/conquest")
-require("scripts/globals/missions")
-require("scripts/globals/zone")
-require("scripts/missions/amk/helpers")
+local ID = require('scripts/zones/Pashhow_Marshlands/IDs')
+require('scripts/quests/i_can_hear_a_rainbow')
+require('scripts/globals/chocobo_digging')
+require('scripts/globals/conquest')
+require('scripts/globals/missions')
+require('scripts/globals/zone')
+require('scripts/missions/amk/helpers')
 -----------------------------------
 local zone_object = {}
 
@@ -35,15 +35,25 @@ zone_object.onZoneIn = function(player, prevZone)
     end
 
     -- AMK06/AMK07
-    if xi.settings.ENABLE_AMK == 1 then
+    if xi.settings.main.ENABLE_AMK == 1 then
         xi.amk.helpers.tryRandomlyPlaceDiggingLocation(player)
     end
 
     return cs
 end
 
+zone_object.onZoneOut = function(player)
+    if player:hasStatusEffect(xi.effect.BATTLEFIELD) then
+        player:delStatusEffect(xi.effect.BATTLEFIELD)
+    end
+end
+
 zone_object.onConquestUpdate = function(zone, updatetype)
     xi.conq.onConquestUpdate(zone, updatetype)
+end
+
+zone_object.onGameDay = function()
+    SetServerVariable("[DIG]ZONE109_ITEMS", 0)
 end
 
 zone_object.onRegionEnter = function(player, region)
@@ -56,6 +66,17 @@ zone_object.onEventUpdate = function(player, csid, option)
 end
 
 zone_object.onEventFinish = function( player, csid, option)
+end
+
+zone_object.onZoneWeatherChange = function(weather)
+    if weather == xi.weather.RAIN or weather == xi.weather.SQUALL then
+        DisallowRespawn(ID.mob.TOXIC_TAMLYN, false)
+        if os.time() > GetServerVariable("TamlynRespawn") then
+            SpawnMob(ID.mob.TOXIC_TAMLYN)
+        end
+    elseif weather ~= xi.weather.RAIN or weather ~= xi.weather.SQUALL then
+        DisallowRespawn(ID.mob.TOXIC_TAMLYN, true)
+    end
 end
 
 return zone_object

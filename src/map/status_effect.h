@@ -676,7 +676,7 @@ enum EFFECT
     EFFECT_NEGATE_VIRUS            = 608,
     EFFECT_NEGATE_CURSE            = 609,
     EFFECT_NEGATE_CHARM            = 610,
-    EFFECT_MAGIC_EVASION_BOOST_II  = 611,
+    EFFECT_MAGIC_EVASION_BOOST     = 611,
     EFFECT_COLURE_ACTIVE           = 612,
     EFFECT_MUMORS_RADIANCE         = 613,
     EFFECT_ULLEGORES_GLOOM         = 614,
@@ -695,6 +695,8 @@ enum EFFECT
     EFFECT_MOBILIZATION            = 627,
     EFFECT_HOVER_SHOT              = 628,
     EFFECT_MOOGLE_AMPLIFIER        = 629,
+    EFFECT_TAINT                   = 630,
+    EFFECT_HAUNT                   = 631,
 
     // Effect icons in packet can go from 0-767, so no custom effects should go in that range.
 
@@ -739,12 +741,14 @@ enum EFFECT
     EFFECT_MEDITATE            = 801, // Dummy effect for SAM Meditate JA
     EFFECT_ELEMENTALRES_DOWN   = 802, // Elemental resistance down
     EFFECT_FULL_SPEED_AHEAD    = 803, // Used to track Full Speed Ahead quest minigame
-    // EFFECT_PLACEHOLDER           = 804  // Description
-    // 804-1022
+    EFFECT_HYSTERIA            = 804, // Used for Hysteroanima to stop after readying a weaponskill with no msg.
+    EFFECT_TOMAHAWK            = 805, // Silent status effect inflicted by a Warrior using the "Tomahawk" job ability
+    // EFFECT_PLACEHOLDER           = 806  // Description
+    // 806-1022
     // EFFECT_PLACEHOLDER           = 1023 // The client dat file seems to have only this many "slots", results of exceeding that are untested.
 };
 
-#define MAX_EFFECTID 804 // 768 real + 32 custom
+#define MAX_EFFECTID 1023 // 768 real + 232 custom
 
 /************************************************************************
  *                                                                       *
@@ -793,7 +797,7 @@ public:
 
     void addMod(Mod modType, int16 amount);
 
-    void SetName(string_t name);
+    void SetName(std::string name);
     void SetName(const int8* name);
 
     const int8* GetName();
@@ -823,7 +827,7 @@ private:
     time_point m_StartTime;      // время получения эффекта (млс)
     int        m_tickCount{ 0 }; // премя последнего выполнения эффекта (млс)
 
-    string_t m_Name; // имя эффекта для скриптов
+    std::string m_Name; // имя эффекта для скриптов
 };
 
 #endif

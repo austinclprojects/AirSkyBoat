@@ -17,7 +17,7 @@ zones[xi.zone.GUSGEN_MINES] =
         NOTHING_OUT_OF_ORDINARY  = 6404,  -- There is nothing out of the ordinary here.
         FELLOW_MESSAGE_OFFSET    = 6419,  -- I'm ready. I suppose.
         CARRIED_OVER_POINTS      = 7001,  -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY  = 7002,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY  = 7002,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER             = 7003,  -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         GEOMAGNETRON_ATTUNED     = 7012,  -- Your <keyitem> has been attuned to a geomagnetic fount in the corresponding locale.
         CONQUEST_BASE            = 7057,  -- Tallying conquest results...
@@ -41,6 +41,8 @@ zones[xi.zone.GUSGEN_MINES] =
         ALREADY_POSSESS_TEMP     = 8308,  -- You already possess that temporary item.
         NO_COMBINATION           = 8313,  -- You were unable to enter a combination.
         REGIME_REGISTERED        = 10391, -- New training regime registered!
+        LEARNS_SPELL             = 11439, -- <name> learns <spell>!
+        UNCANNY_SENSATION        = 11441, -- You are assaulted by an uncanny sensation.
         COMMON_SENSE_SURVIVAL    = 11476, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
@@ -59,7 +61,6 @@ zones[xi.zone.GUSGEN_MINES] =
     },
     npc =
     {
-        CASKET_BASE    = 17580348,
         TREASURE_CHEST = 17580403,
         MINING =
         {

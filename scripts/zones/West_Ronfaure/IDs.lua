@@ -17,7 +17,7 @@ zones[xi.zone.WEST_RONFAURE] =
         KEYITEM_LOST             = 6416,  -- Lost key item: <keyitem>.
         FELLOW_MESSAGE_OFFSET    = 6441,  -- I'm ready. I suppose.
         CARRIED_OVER_POINTS      = 7023,  -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY  = 7024,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY  = 7024,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER             = 7025,  -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         CONQUEST_BASE            = 7079,  -- Tallying conquest results...
         FISHING_MESSAGE_OFFSET   = 7238,  -- You can't fish here.
@@ -41,6 +41,7 @@ zones[xi.zone.WEST_RONFAURE] =
         DISMAYED_CUSTOMER        = 7416,  -- You find some worthless scraps of paper.
         CONQUEST                 = 7538,  -- You've earned conquest points!
         SOMETHING_IS_AMISS       = 7901,  -- Something is amiss.
+        GARRISON_BASE            = 7931,  -- Hm? What is this? %? How do I know this is not some [San d'Orian/Bastokan/Windurstian] trick?
         PLAYER_OBTAINS_ITEM      = 8067,  -- <name> obtains <item>!
         UNABLE_TO_OBTAIN_ITEM    = 8068,  -- You were unable to obtain the item.
         PLAYER_OBTAINS_TEMP_ITEM = 8069,  -- <name> obtains the temporary item: <item>!
@@ -53,25 +54,16 @@ zones[xi.zone.WEST_RONFAURE] =
     {
         FUNGUS_BEETLE_PH      =
         {
-            [17187046] = 17187047, -- -133.001 -20.636 -141.110
-            [17187115] = 17187047, -- -287.202 -20.826 -199.075
-            [17187114] = 17187047, -- -295.626 -21.389 -192.191
+            [17187026] = 17187047, -- -332.722,-21.032,-112.044
         },
         JAGGEDY_EARED_JACK_PH =
         {
             [17187110] = 17187111, -- -262.780 -22.384 -253.873
-            [17187109] = 17187111, -- -267.389 -21.669 -252.720
-            [17187108] = 17187111, -- -273.558 -19.943 -284.081
-            [17187042] = 17187111, -- -248.681 -21.336 -163.987
-            [17187154] = 17187111, -- -329.892 -9.702 -313.713
-            [17187152] = 17187111, -- -278.421 -11.691 -351.425
-            [17187132] = 17187111, -- -204.492 -20.754 -324.770
         },
         MARAUDER_DVOGZOG      = 17187273,
     },
     npc =
     {
-        CASKET_BASE     = 17187467,
         SIGNPOST_OFFSET = 17187505,
         OVERSEER_BASE   = 17187525, -- Doladepaiton_RK in npc_list
     },

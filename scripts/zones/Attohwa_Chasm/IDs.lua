@@ -18,7 +18,7 @@ zones[xi.zone.ATTOHWA_CHASM] =
         NOTHING_OUT_OF_ORDINARY = 6404, -- There is nothing out of the ordinary here.
         FELLOW_MESSAGE_OFFSET   = 6419, -- I'm ready. I suppose.
         CARRIED_OVER_POINTS     = 7001, -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY = 7002, -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY = 7002, -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER            = 7003, -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         CONQUEST_BASE           = 7057, -- Tallying conquest results...
         MINING_IS_POSSIBLE_HERE = 7216, -- Mining is possible here if you have <item>.
@@ -40,14 +40,17 @@ zones[xi.zone.ATTOHWA_CHASM] =
             [16806158] = 16806162, -- -398.931 -4.536 79.640
             [16806161] = 16806162, -- -381.284 -9.233 40.054
         },
+        CITIPATI            = 16806162,
         LIOUMERE            = 16806031,
         TIAMAT              = 16806227,
         FEELER_ANTLION      = 16806242,
+        XOLOTL              = 16806215,
     },
     npc =
     {
         MIASMA_OFFSET   = 16806304, -- _071 in npc_list
         GASPONIA_OFFSET = 16806327, -- _07n in npc_list
+        ALASTOR_QM      = 16806296, -- qm_feeler_antlion in npc_list
         EXCAVATION =
         {
             16806369,

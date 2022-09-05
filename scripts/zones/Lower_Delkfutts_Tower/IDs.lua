@@ -19,7 +19,7 @@ zones[xi.zone.LOWER_DELKFUTTS_TOWER] =
         KEYITEM_OBTAINED                 = 6582,  -- Obtained key item: <keyitem>.
         FELLOW_MESSAGE_OFFSET            = 6608,  -- I'm ready. I suppose.
         CARRIED_OVER_POINTS              = 7190,  -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY          = 7191,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY          = 7191,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER                     = 7192,  -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         FISHING_MESSAGE_OFFSET           = 7246,  -- You can't fish here.
         SOMETHING_HUGE_BEARING_DOWN      = 7494,  -- Something huge is bearing down upon you!
@@ -29,6 +29,8 @@ zones[xi.zone.LOWER_DELKFUTTS_TOWER] =
         ALREADY_POSSESS_TEMP             = 8632,  -- You already possess that temporary item.
         NO_COMBINATION                   = 8637,  -- You were unable to enter a combination.
         REGIME_REGISTERED                = 10715, -- New training regime registered!
+        LEARNS_SPELL                     = 11763, -- <name> learns <spell>!
+        UNCANNY_SENSATION                = 11765, -- You are assaulted by an uncanny sensation.
         COMMON_SENSE_SURVIVAL            = 11772, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
@@ -48,10 +50,10 @@ zones[xi.zone.LOWER_DELKFUTTS_TOWER] =
             [17531118] = 17531114, -- 397.252 -32.128 -32.807
         },
         DISASTER_IDOL = 17531121,
+        EURYMEDON     = 17531114,
     },
     npc =
     {
-        CASKET_BASE = 17531134,
     },
 }
 

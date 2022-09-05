@@ -16,7 +16,7 @@ zones[xi.zone.THE_SHRINE_OF_RUAVITAU] =
         KEYITEM_OBTAINED         = 6393,  -- Obtained key item: <keyitem>.
         NOTHING_OUT_OF_ORDINARY  = 6404,  -- There is nothing out of the ordinary here.
         CARRIED_OVER_POINTS      = 7001,  -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY  = 7002,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY  = 7002,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER             = 7003,  -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         FISHING_MESSAGE_OFFSET   = 7057,  -- You can't fish here.
         CONQUEST_BASE            = 7157,  -- Tallying conquest results...
@@ -35,6 +35,7 @@ zones[xi.zone.THE_SHRINE_OF_RUAVITAU] =
         ULLIKUMMI        = 17506418,
         OLLAS_OFFSET     = 17506667,
         KIRIN            = 17506670,
+        MOTHER_GLOBE     = 17506396,
     },
     npc =
     {
@@ -66,9 +67,9 @@ zones[xi.zone.THE_SHRINE_OF_RUAVITAU] =
             [18] = "y", [19] = "b",
         },
         OLLAS_QM        = 17506692,
-        CASKET_BASE     = 17506695,
         DOOR_OFFSET     = 17506718,
         MONOLITH_OFFSET = 17506741,
+        KIRIN_QM        = 17506693,
     },
 }
 

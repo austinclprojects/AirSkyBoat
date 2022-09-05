@@ -19,7 +19,7 @@ zones[xi.zone.DAVOI] =
         NOTHING_OUT_OF_ORDINARY     = 6404, -- There is nothing out of the ordinary here.
         FELLOW_MESSAGE_OFFSET       = 6419, -- I'm ready. I suppose.
         CARRIED_OVER_POINTS         = 7001, -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY     = 7002, -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY     = 7002, -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER                = 7003, -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         CONQUEST_BASE               = 7057, -- Tallying conquest results...
         FISHING_MESSAGE_OFFSET      = 7216, -- You can't fish here.
@@ -36,6 +36,8 @@ zones[xi.zone.DAVOI] =
         WHERE_THE_TONBERRY_TOLD_YOU = 7928, -- This is where the Tonberry from Carpenters' Landing told you to bring the <item>...
         NOTHING_TO_DO               = 7929, -- You have nothing left to do here.
         UNDER_ATTACK                = 7931, -- You are under attack!
+        LEARNS_SPELL                = 7971, -- <name> learns <spell>!
+        UNCANNY_SENSATION           = 7973, -- You are assaulted by an uncanny sensation.
         COMMON_SENSE_SURVIVAL       = 7980, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =

@@ -5,7 +5,7 @@
 -- !pos 128.771 0.000 118.538 231
 -----------------------------------
 local ID = require("scripts/zones/Northern_San_dOria/IDs")
-require("scripts/settings/main")
+require("scripts/globals/settings")
 require("scripts/globals/titles")
 require("scripts/globals/quests")
 -----------------------------------
@@ -34,7 +34,7 @@ entity.onTrigger = function(player, npc)
             player:tradeComplete()
             player:startEvent(600)
         else
-            player:showText(npc, 11103, 618, 70)
+            player:showText(npc, ID.text.ABIOLEGET_PEAS, xi.items.BLUE_PEAS, 70)
         end
     else
         player:showText(npc, ID.text.ABIOLEGET_DIALOG)

@@ -18,7 +18,7 @@ zones[xi.zone.RANGUEMONT_PASS] =
         SENSE_OF_FOREBODING      = 6405,  -- You are suddenly overcome with a sense of foreboding...
         FELLOW_MESSAGE_OFFSET    = 6419,  -- I'm ready. I suppose.
         CARRIED_OVER_POINTS      = 7001,  -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY  = 7002,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY  = 7002,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER             = 7003,  -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         GEOMAGNETRON_ATTUNED     = 7012,  -- Your <keyitem> has been attuned to a geomagnetic fount in the corresponding locale.
         CONQUEST_BASE            = 7057,  -- Tallying conquest results...
@@ -43,12 +43,15 @@ zones[xi.zone.RANGUEMONT_PASS] =
             17457214, -- -5.188 11.730 -141.503
             17457215, -- 59.15 -120 50
         },
+        HYAKUME_PH =
+        {
+            [17457229] = 17457236, -- 125.987, 3.561, -57.222
+        },
         TAISAIJIN    = 17457216,
         TROS         = 17457309,
     },
     npc =
     {
-        CASKET_BASE  = 17457315,
     },
 }
 

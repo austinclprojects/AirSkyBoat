@@ -1,13 +1,13 @@
 -----------------------------------
 -- Zone: Buburimu_Peninsula (118)
 -----------------------------------
-local ID = require("scripts/zones/Buburimu_Peninsula/IDs")
-require("scripts/quests/i_can_hear_a_rainbow")
-require("scripts/globals/chocobo_digging")
-require("scripts/globals/conquest")
-require("scripts/globals/helm")
-require("scripts/globals/zone")
-require("scripts/missions/amk/helpers")
+local ID = require('scripts/zones/Buburimu_Peninsula/IDs')
+require('scripts/quests/i_can_hear_a_rainbow')
+require('scripts/globals/chocobo_digging')
+require('scripts/globals/conquest')
+require('scripts/globals/helm')
+require('scripts/globals/zone')
+require('scripts/missions/amk/helpers')
 -----------------------------------
 local zone_object = {}
 
@@ -18,8 +18,10 @@ end
 zone_object.onInitialize = function(zone)
     local hour = VanadielHour()
 
-    if hour >= 6 and hour < 16 then
-        GetMobByID(ID.mob.BACKOO):setRespawnTime(1)
+    if xi.settings.main.ENABLE_WOTG == 1 then
+        if hour >= 6 and hour < 16 then
+            GetMobByID(ID.mob.BACKOO):setRespawnTime(1)
+        end
     end
 
     xi.conq.setRegionalConquestOverseers(zone:getRegionID())
@@ -39,15 +41,25 @@ zone_object.onZoneIn = function(player, prevZone)
     end
 
     -- AMK06/AMK07
-    if xi.settings.ENABLE_AMK == 1 then
+    if xi.settings.main.ENABLE_AMK == 1 then
         xi.amk.helpers.tryRandomlyPlaceDiggingLocation(player)
     end
 
     return cs
 end
 
+zone_object.onZoneOut = function(player)
+    if player:hasStatusEffect(xi.effect.BATTLEFIELD) then
+        player:delStatusEffect(xi.effect.BATTLEFIELD)
+    end
+end
+
 zone_object.onConquestUpdate = function(zone, updatetype)
     xi.conq.onConquestUpdate(zone, updatetype)
+end
+
+zone_object.onGameDay = function()
+    SetServerVariable("[DIG]ZONE118_ITEMS", 0)
 end
 
 zone_object.onRegionEnter = function(player, region)
@@ -69,7 +81,6 @@ zone_object.onGameHour = function(zone)
         end
     end
 end
-
 
 zone_object.onEventUpdate = function( player, csid, option)
     if csid == 3 then

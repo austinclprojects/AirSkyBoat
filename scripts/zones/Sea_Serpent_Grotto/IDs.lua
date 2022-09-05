@@ -19,7 +19,7 @@ zones[xi.zone.SEA_SERPENT_GROTTO] =
         NOTHING_OUT_OF_ORDINARY    = 6404,  -- There is nothing out of the ordinary here.
         FELLOW_MESSAGE_OFFSET      = 6419,  -- I'm ready. I suppose.
         CARRIED_OVER_POINTS        = 7001,  -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY    = 7002,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY    = 7002,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER               = 7003,  -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         CONQUEST_BASE              = 7057,  -- Tallying conquest results...
         FISHING_MESSAGE_OFFSET     = 7216,  -- You can't fish here.
@@ -55,7 +55,6 @@ zones[xi.zone.SEA_SERPENT_GROTTO] =
         },
         NAMTAR_PH =
         {
-            [17498178] = 17498184, -- -128.762 9.595 164.996
             [17498183] = 17498184, -- -157.606 9.905 168.518
         },
         WUUR_THE_SANDCOMBER_PH =
@@ -120,10 +119,10 @@ zones[xi.zone.SEA_SERPENT_GROTTO] =
         MIMIC        = 17498564,
         WATER_LEAPER = 17498565,
         GLYRYVILU    = 17498566,
+        CHARYBDIS    = 17498522,
     },
     npc =
     {
-        CASKET_BASE     = 17498579,
         TREASURE_CHEST  = 17498625,
         TREASURE_COFFER = 17498626,
     },

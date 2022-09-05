@@ -16,7 +16,7 @@ zones[xi.zone.SELBINA] =
         KEYITEM_OBTAINED        = 6393, -- Obtained key item: <keyitem>.
         NOT_HAVE_ENOUGH_GIL     = 6395, -- You do not have enough gil.
         CARRIED_OVER_POINTS     = 6429, -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY = 6430, -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY = 6430, -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER            = 6431, -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         HOMEPOINT_SET           = 6487, -- Home point set!
         FISHING_MESSAGE_OFFSET  = 6562, -- You can't fish here.
@@ -42,6 +42,7 @@ zones[xi.zone.SELBINA] =
     npc =
     {
         EXPLORER_MOOGLE = 17793131,
+        SHIP = 17793088,
     },
 }
 

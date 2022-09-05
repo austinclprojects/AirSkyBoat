@@ -19,7 +19,7 @@ zones[xi.zone.WEST_SARUTABARUTA] =
         NOTHING_OUT_OF_ORDINARY     = 6404,  -- There is nothing out of the ordinary here.
         FELLOW_MESSAGE_OFFSET       = 6419,  -- I'm ready. I suppose.
         CARRIED_OVER_POINTS         = 7001,  -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY     = 7002,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY     = 7002,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER                = 7003,  -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         FISHING_MESSAGE_OFFSET      = 7057,  -- You can't fish here.
         DIG_THROW_AWAY              = 7070,  -- You dig up <item>, but your inventory is full. You regretfully throw the <item> away.
@@ -42,6 +42,7 @@ zones[xi.zone.WEST_SARUTABARUTA] =
         MELT_BARE_HANDS             = 7410,  -- It looks like it would melt if you touched it with your bare hands...
         HARVESTING_IS_POSSIBLE_HERE = 7446,  -- Harvesting is possible here if you have <item>.
         CONQUEST                    = 7462,  -- You've earned conquest points!
+        GARRISON_BASE               = 7827,  -- Hm? What is this? %? How do I know this is not some [San d'Orian/Bastokan/Windurstian] trick?
         PLAYER_OBTAINS_ITEM         = 7874,  -- <name> obtains <item>!
         UNABLE_TO_OBTAIN_ITEM       = 7875,  -- You were unable to obtain the item.
         PLAYER_OBTAINS_TEMP_ITEM    = 7876,  -- <name> obtains the temporary item: <item>!
@@ -118,7 +119,6 @@ zones[xi.zone.WEST_SARUTABARUTA] =
 
     npc =
     {
-        CASKET_BASE     = 17248770,
         SIGNPOST_OFFSET = 17248797,
         OVERSEER_BASE   = 17248830, -- Naguipeillont_RK in npc_list
 

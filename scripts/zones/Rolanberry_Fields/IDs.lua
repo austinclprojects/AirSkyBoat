@@ -18,8 +18,9 @@ zones[xi.zone.ROLANBERRY_FIELDS] =
         NOT_ENOUGH_GIL           = 6417,  -- You do not have enough gil.
         FELLOW_MESSAGE_OFFSET    = 6441,  -- I'm ready. I suppose.
         CARRIED_OVER_POINTS      = 7023,  -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY  = 7024,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY  = 7024,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER             = 7025,  -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
+        UNABLE_TO_PROGRESS       = 7069,  -- ou are unable to make further progress in Rhapsodies of Vana'diel due to an event occurring in the [Chains of Promathia/Treasures of Aht Urhgan/Wings of the Goddess/Seekers of Adoulin/Rise of the Zilart] missions.
         CONQUEST_BASE            = 7079,  -- Tallying conquest results...
         FISHING_MESSAGE_OFFSET   = 7238,  -- You can't fish here.
         DIG_THROW_AWAY           = 7251,  -- You dig up <item>, but your inventory is full. You regretfully throw the <item> away.
@@ -40,9 +41,11 @@ zones[xi.zone.ROLANBERRY_FIELDS] =
         VOIDWALKER_UPGRADE_KI_2  = 10965, -- The <keyitem> takes on a deeper, richer hue and becomes <keyitem>!
         VOIDWALKER_BREAK_KI      = 10966, -- The <keyitem> shatters into tiny fragments.
         VOIDWALKER_OBTAIN_KI     = 10967, -- Obtained key item: <keyitem>!
-        AWAIT_YOUR_CHALLENGE     = 12184, -- We await your challenge, traveler.
-        LACK_LEGION_POINTS       = 12221, -- It would seem that you lack the necessary amount of Legion points.
-        COMMON_SENSE_SURVIVAL    = 12278, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
+        AWAIT_YOUR_CHALLENGE     = 12186, -- We await your challenge, traveler.
+        LACK_LEGION_POINTS       = 12223, -- It would seem that you lack the necessary amount of Legion points.
+        LEARNS_SPELL             = 12271, -- <name> learns <spell>!
+        UNCANNY_SENSATION        = 12273, -- You are assaulted by an uncanny sensation.
+        COMMON_SENSE_SURVIVAL    = 12280, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
 
     mob =
@@ -65,9 +68,11 @@ zones[xi.zone.ROLANBERRY_FIELDS] =
             [17228149] = 17228150, -- 395 -24 -147
         },
 
-        SILK_CATERPILLAR  = 17227782,
-        SIMURGH           = 17228242,
-        CHUGLIX_BERRYPAWS = 17228249,
+        SILK_CATERPILLAR     = 17227782,
+        SIMURGH              = 17228242,
+        CHUGLIX_BERRYPAWS    = 17228249,
+        BLACK_TRIPLE_STARS_1 = 17227972,
+        BLACK_TRIPLE_STARS_2 = 17227992,
 
         VOIDWALKER =
         {
@@ -103,7 +108,6 @@ zones[xi.zone.ROLANBERRY_FIELDS] =
 
     npc =
     {
-        CASKET_BASE = 17228319,
     },
 }
 

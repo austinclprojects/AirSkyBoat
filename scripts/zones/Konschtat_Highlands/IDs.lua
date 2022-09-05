@@ -18,7 +18,7 @@ zones[xi.zone.KONSCHTAT_HIGHLANDS] =
         NOTHING_OUT_OF_ORDINARY      = 6404,  -- There is nothing out of the ordinary here.
         FELLOW_MESSAGE_OFFSET        = 6419,  -- I'm ready. I suppose.
         CARRIED_OVER_POINTS          = 7001,  -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY      = 7002,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY      = 7002,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER                 = 7003,  -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         CONQUEST_BASE                = 7057,  -- Tallying conquest results...
         ALREADY_OBTAINED_TELE        = 7216,  -- You already possess the gate crystal for this telepoint.
@@ -53,9 +53,10 @@ zones[xi.zone.KONSCHTAT_HIGHLANDS] =
         VOIDWALKER_UPGRADE_KI_2      = 10978, -- The <keyitem> takes on a deeper, richer hue and becomes <keyitem>!
         VOIDWALKER_BREAK_KI          = 10979, -- The <keyitem> shatters into tiny fragments.
         VOIDWALKER_OBTAIN_KI         = 10980, -- Obtained key item: <keyitem>!
+        LEARNS_SPELL                 = 11916, -- <name> learns <spell>!
+        UNCANNY_SENSATION            = 11918, -- You are assaulted by an uncanny sensation.
         COMMON_SENSE_SURVIVAL        = 11925, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
-
     mob =
     {
         STRAY_MARY_PH  =
@@ -117,7 +118,6 @@ zones[xi.zone.KONSCHTAT_HIGHLANDS] =
 
     npc =
     {
-        CASKET_BASE = 17220111,
     },
 }
 

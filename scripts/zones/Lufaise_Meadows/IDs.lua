@@ -18,7 +18,7 @@ zones[xi.zone.LUFAISE_MEADOWS] =
         NOTHING_OUT_OF_ORDINARY  = 6404, -- There is nothing out of the ordinary here.
         FELLOW_MESSAGE_OFFSET    = 6419, -- I'm ready. I suppose.
         CARRIED_OVER_POINTS      = 7001, -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY  = 7002, -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY  = 7002, -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER             = 7003, -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         CONQUEST_BASE            = 7057, -- Tallying conquest results...
         CONQUEST                 = 7225, -- You've earned conquest points!
@@ -29,6 +29,23 @@ zones[xi.zone.LUFAISE_MEADOWS] =
         MURDEROUS_PRESENCE       = 7744, -- Wait, you sense a murderous presence...!
         YOU_CAN_SEE_FOR_MALMS    = 7745, -- You can see for malms in every direction.
         SPINE_CHILLING_PRESENCE  = 7747, -- You sense a spine-chilling presence!
+        AMALTHEIA_TRIGGER        = 7786, -- A message has been engraved into the rock: “Offer up the ancient shield, and the pact shall be honored.”
+        AMALTHEIA_SPAWN1         = 7787, -- Very well, I shall test thy mettle...
+        AMALTHEIA_SPAWN2         = 7788, -- I am Amaltheia the Omnipotent. My almighty horns shall seal thy fate this day!
+        AMALTHEIA_WRONG_TRADE    = 7789, -- Nothing happens...
+        KURREA_TRIGGER           = 7790, -- The stench of rotten flesh fills the air around you. Some scavenger must have made this place its territory.
+        KURREA_SPAWN             = 7791, -- You set <number> <items> on the ground. The smell becomes almost unbearable. Suddenly, a huge creature approaches and starts sniffing around!
+        KURREA_WRONG_TRADE       = 7792, -- Nothing happens.
+        KURREA_SLURPS            = 7793, -- Kurrea slurps down the adamantoise soup!
+        KURREA_MUSCLES           = 7794, -- Kurrea's muscles bulge crazily!
+        KURREA_SHINE             = 7795, -- Kurrea's scales shine mysteriously!
+        KURREA_WIND              = 7796, -- Kurrea is enveloped by a fierce wind!
+        KURREA_RIGID             = 7797, -- Kurrea's hide grows rigid!
+        KURREA_VEIN              = 7798, -- The veins in Kurrea's head are popping out!
+        KURREA_EYES              = 7799, -- Kurrea's eyes glow weirdly!
+        KURREA_CURE              = 7800, -- Kurrea's wounds disappear!
+        KURREA_AURA              = 7801, -- Kurrea is surrounded by an ominous aura!
+        KURREA_GREEN             = 7802, -- Kurrea's face has turned green...
         COMMON_SENSE_SURVIVAL    = 8742, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
@@ -45,11 +62,18 @@ zones[xi.zone.LUFAISE_MEADOWS] =
         {
             [16875720] = 16875741, -- -137.168 -15.390 91.016
         },
+        YALUN_EKE_PH          =
+        {
+            [16875593] = 16875600, -- 236.418, -0.573, -118.742
+            [16875604] = 16875600, -- 387.196, 0.060, -115.952
+        },
         LESHY_OFFSET          = 16875754,
         COLORFUL_LESHY        = 16875762,
         SPLINTERSPINE_GRUKJUK = 16875774,
         KURREA                = 16875778,
         AMALTHEIA             = 16875779,
+        SENGANN               = 16875690,
+        YALUN_EKE             = 16875600,
     },
     npc =
     {

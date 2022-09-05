@@ -18,7 +18,7 @@ zones[xi.zone.MERIPHATAUD_MOUNTAINS] =
         KEYITEM_LOST             = 6416,  -- Lost key item: <keyitem>.
         FELLOW_MESSAGE_OFFSET    = 6441,  -- I'm ready. I suppose.
         CARRIED_OVER_POINTS      = 7023,  -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY  = 7024,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY  = 7024,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER             = 7025,  -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         CONQUEST_BASE            = 7079,  -- Tallying conquest results...
         BEASTMEN_BANNER          = 7160,  -- There is a beastmen's banner.
@@ -30,6 +30,7 @@ zones[xi.zone.MERIPHATAUD_MOUNTAINS] =
         CONQUEST                 = 7908,  -- You've earned conquest points!
         ITEMS_ITEMS_LA_LA        = 8293,  -- You can hear a strange voice... Items, items, la la la la la
         GOBLIN_SLIPPED_AWAY      = 8299,  -- The Goblin slipped away when you were not looking...
+        GARRISON_BASE            = 8309,  -- Hm? What is this? %? How do I know this is not some [San d'Orian/Bastokan/Windurstian] trick?
         PLAYER_OBTAINS_ITEM      = 8356,  -- <name> obtains <item>!
         UNABLE_TO_OBTAIN_ITEM    = 8357,  -- You were unable to obtain the item.
         PLAYER_OBTAINS_TEMP_ITEM = 8358,  -- <name> obtains the temporary item: <item>!
@@ -104,7 +105,6 @@ zones[xi.zone.MERIPHATAUD_MOUNTAINS] =
 
     npc =
     {
-        CASKET_BASE   = 17265219,
         OVERSEER_BASE = 17265271, -- Chegourt_RK in npc_list
     },
 }

@@ -17,7 +17,7 @@ zones[xi.zone.LABYRINTH_OF_ONZOZO] =
         NOTHING_OUT_OF_ORDINARY  = 6404,  -- There is nothing out of the ordinary here.
         FELLOW_MESSAGE_OFFSET    = 6419,  -- I'm ready. I suppose.
         CARRIED_OVER_POINTS      = 7001,  -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY  = 7002,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY  = 7002,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER             = 7003,  -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         GEOMAGNETRON_ATTUNED     = 7012,  -- Your <keyitem> has been attuned to a geomagnetic fount in the corresponding locale.
         CONQUEST_BASE            = 7057,  -- Tallying conquest results...
@@ -61,8 +61,6 @@ zones[xi.zone.LABYRINTH_OF_ONZOZO] =
         NARASIMHA_PH            =
         {
             [17649783] = 17649784, -- -119.897 0.275 127.060
-            [17649787] = 17649784, -- -126.841 -0.554 129.681
-            [17649790] = 17649784, -- -140.000 -0.955 144.000
         },
         HELLION_PH              =
         {
@@ -86,10 +84,10 @@ zones[xi.zone.LABYRINTH_OF_ONZOZO] =
         MYSTICMAKER_PROFBLIX    = 17649693,
         UBUME                   = 17649860,
         MEGAPOD_MEGALOPS        = 17649861,
+        ONZOZO_PH               = 17649730,
     },
     npc =
     {
-        CASKET_BASE    = 17649867,
         TREASURE_CHEST = 17649900,
     },
 }

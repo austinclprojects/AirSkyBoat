@@ -19,7 +19,7 @@ zones[xi.zone.EASTERN_ALTEPA_DESERT] =
         SENSE_OF_FOREBODING      = 6405,  -- You are suddenly overcome with a sense of foreboding...
         FELLOW_MESSAGE_OFFSET    = 6419,  -- I'm ready. I suppose.
         CARRIED_OVER_POINTS      = 7001,  -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY  = 7002,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY  = 7002,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER             = 7003,  -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         CONQUEST_BASE            = 7057,  -- Tallying conquest results...
         BEASTMEN_BANNER          = 7138,  -- There is a beastmen's banner.
@@ -29,6 +29,7 @@ zones[xi.zone.EASTERN_ALTEPA_DESERT] =
         FIND_NOTHING             = 7573,  -- You dig and you dig, but find nothing.
         AMK_DIGGING_OFFSET       = 7639,  -- You spot some familiar footprints. You are convinced that your moogle friend has been digging in the immediate vicinity.
         ALREADY_OBTAINED_TELE    = 7667,  -- You already possess the gate crystal for this telepoint.
+        GARRISON_BASE            = 7705,  -- Hm? What is this? %? How do I know this is not some [San d'Orian/Bastokan/Windurstian] trick?
         PLAYER_OBTAINS_ITEM      = 7778,  -- <name> obtains <item>!
         UNABLE_TO_OBTAIN_ITEM    = 7779,  -- You were unable to obtain the item.
         PLAYER_OBTAINS_TEMP_ITEM = 7780,  -- <name> obtains the temporary item: <item>!
@@ -56,7 +57,6 @@ zones[xi.zone.EASTERN_ALTEPA_DESERT] =
     },
     npc =
     {
-        CASKET_BASE   = 17244596,
         OVERSEER_BASE = 17244627, -- Eaulevisat_RK in npc_list
     },
 }

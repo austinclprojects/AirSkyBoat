@@ -2,7 +2,7 @@
 -- Spell: Bio III
 -- Deals dark damage that weakens an enemy's attacks and gradually reduces its HP.
 -----------------------------------
-require("scripts/settings/main")
+require("scripts/globals/settings")
 require("scripts/globals/status")
 require("scripts/globals/magic")
 require("scripts/globals/utils")
@@ -42,6 +42,7 @@ spell_object.onSpellCast = function(caster, target, spell)
     local final = finalMagicAdjustments(caster, target, spell, dmg)
 
     -- Calculate duration
+    local merits = caster:getMerit(xi.merit.BIO_III)
     local duration = calculateDuration(180, spell:getSkillType(), spell:getSpellGroup(), caster, target)
 
     -- Check for Dia
@@ -68,11 +69,15 @@ spell_object.onSpellCast = function(caster, target, spell)
     end
 
     -- Do it!
-    target:addStatusEffect(xi.effect.BIO, dotdmg, 3, duration, 0, 20, 3)
+    if caster:isPC() then
+        target:addStatusEffect(xi.effect.BIO, dotdmg, 3, merits, 0, 20, 3)
+    else
+        target:addStatusEffect(xi.effect.BIO, dotdmg, 3, duration, 0, 20, 3)
+    end
     spell:setMsg(xi.msg.basic.MAGIC_DMG)
 
     -- Try to kill same tier Dia (default behavior)
-    if xi.settings.DIA_OVERWRITE == 1 and dia ~= nil then
+    if xi.settings.main.DIA_OVERWRITE == 1 and dia ~= nil then
         if dia:getPower() <= 3 then
             target:delStatusEffect(xi.effect.DIA)
         end

@@ -19,7 +19,7 @@ zones[xi.zone.BEADEAUX] =
         NOTHING_OUT_OF_ORDINARY            = 6404, -- There is nothing out of the ordinary here.
         FELLOW_MESSAGE_OFFSET              = 6419, -- I'm ready. I suppose.
         CARRIED_OVER_POINTS                = 7001, -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY            = 7002, -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY            = 7002, -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER                       = 7003, -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         CONQUEST_BASE                      = 7057, -- Tallying conquest results...
         LOCKED_DOOR_QUADAV_HAS_KEY         = 7220, -- It is locked tight, but has what looks like a keyhole. Maybe one of the Quadav here has the key.
@@ -31,6 +31,8 @@ zones[xi.zone.BEADEAUX] =
         YOU_CAN_NOW_BECOME_A_DARK_KNIGHT   = 7357, -- You can now become a dark knight!
         FOUL_SMELLING_SOIL_IS_SPILLING_OUT = 7358, -- Foul-smelling soil is spilling out.
         CHEST_UNLOCKED                     = 7368, -- You unlock the chest!
+        LEARNS_SPELL                       = 7786, -- <name> learns <spell>!
+        UNCANNY_SENSATION                  = 7788, -- You are assaulted by an uncanny sensation.
         COMMON_SENSE_SURVIVAL              = 7795, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =

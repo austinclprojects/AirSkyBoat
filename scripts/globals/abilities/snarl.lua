@@ -5,7 +5,7 @@
 -- Recast Time: 30 seconds
 -- Duration: N/A
 -----------------------------------
-require("scripts/settings/main")
+require("scripts/globals/settings")
 require("scripts/globals/status")
 require("scripts/globals/pets")
 require("scripts/globals/msg")
@@ -16,7 +16,7 @@ ability_object.onAbilityCheck = function(player, target, ability)
     if (player:getPet() == nil) then
         return xi.msg.basic.REQUIRES_A_PET, 0
     else
-        if ((player:getPet():getTarget() ~= nil) and (player:isJugPet())) then
+        if ((player:getPet() ~= nil) and (player:isJugPet())) then
             return 0, 0
         else
             return xi.msg.basic.PET_CANNOT_DO_ACTION, 0

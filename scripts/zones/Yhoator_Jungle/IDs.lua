@@ -18,7 +18,7 @@ zones[xi.zone.YHOATOR_JUNGLE] =
         NOTHING_OUT_OF_ORDINARY     = 6404,  -- There is nothing out of the ordinary here.
         FELLOW_MESSAGE_OFFSET       = 6419,  -- I'm ready. I suppose.
         CARRIED_OVER_POINTS         = 7001,  -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY     = 7002,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY     = 7002,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER                = 7003,  -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         CONQUEST_BASE               = 7057,  -- Tallying conquest results...
         BEASTMEN_BANNER             = 7138,  -- There is a beastmen's banner.
@@ -36,6 +36,7 @@ zones[xi.zone.YHOATOR_JUNGLE] =
         FAINT_CRY                   = 7690,  -- You hear the cry of a famished Opo-opo!
         PAMAMAS                     = 7693,  -- You might be able to draw an Opo-opo here if you had more pamamas.
         SOMETHING_IS_BURIED_HERE    = 7741,  -- It looks like something is buried here. If you had <item> you could dig it up.
+        GARRISON_BASE               = 7751,  -- Hm? What is this? %? How do I know this is not some [San d'Orian/Bastokan/Windurstian] trick?
         PLAYER_OBTAINS_ITEM         = 7830,  -- <name> obtains <item>!
         UNABLE_TO_OBTAIN_ITEM       = 7831,  -- You were unable to obtain the item.
         PLAYER_OBTAINS_TEMP_ITEM    = 7832,  -- <name> obtains the temporary item: <item>!
@@ -62,9 +63,9 @@ zones[xi.zone.YHOATOR_JUNGLE] =
     },
     npc =
     {
-        CASKET_BASE       = 17285619,
         OVERSEER_BASE     = 17285650, -- Ilieumort_RK in npc_list
         PEDDLESTOX        = 17285686,
+        EDACIOUS_QM       = 17285617, -- qm1 in npc_list
         BEASTMEN_TREASURE =
         {
             17285696, -- qm4

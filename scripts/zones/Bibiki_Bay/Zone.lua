@@ -1,12 +1,10 @@
 -----------------------------------
---
 -- Zone: Bibiki_Bay (4)
---
 -----------------------------------
-local ID = require("scripts/zones/Bibiki_Bay/IDs")
-require("scripts/globals/chocobo_digging")
-require("scripts/globals/manaclipper")
-require("scripts/globals/zone")
+local ID = require('scripts/zones/Bibiki_Bay/IDs')
+require('scripts/globals/chocobo_digging')
+require('scripts/globals/manaclipper')
+require('scripts/globals/zone')
 -----------------------------------
 local zone_object = {}
 
@@ -35,6 +33,10 @@ end
 
 zone_object.onConquestUpdate = function(zone, updatetype)
     xi.conq.onConquestUpdate(zone, updatetype)
+end
+
+zone_object.onGameDay = function()
+    SetServerVariable("[DIG]ZONE4_ITEMS", 0)
 end
 
 zone_object.onRegionEnter = function(player, region)

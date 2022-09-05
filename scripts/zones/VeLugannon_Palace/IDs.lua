@@ -16,7 +16,7 @@ zones[xi.zone.VELUGANNON_PALACE] =
         KEYITEM_OBTAINED         = 6393,  -- Obtained key item: <keyitem>.
         NOTHING_OUT_OF_ORDINARY  = 6404,  -- There is nothing out of the ordinary here.
         CARRIED_OVER_POINTS      = 7001,  -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY  = 7002,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY  = 7002,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER             = 7003,  -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         CONQUEST_BASE            = 7057,  -- Tallying conquest results...
         CHEST_UNLOCKED           = 7224,  -- You unlock the chest!
@@ -35,26 +35,32 @@ zones[xi.zone.VELUGANNON_PALACE] =
         MIMIC                   = 17502567,
         BRIGANDISH_BLADE        = 17502568,
         STEAM_CLEANER           = 17502569,
-        STEAM_CLEANER_DETECTORS =
+        SC_DETECTORS            =
         {
-            -- E Lower Chamber
-            17502543,
-            17502545,
-            -- W Lower Chamber
-            17502547,
-            17502549,
-            -- NE Lower Chamber
-            17502551,
-            17502553,
-            -- NW Lower Chamber
-            17502555,
-            17502557,
+            DET1 = 17502545, -- Seiryu North Basement (1-2)
+            DET2 = 17502543,
+            DET3 = 17502551, -- Genbu South Basement (2-1)
+            DET4 = 17502553,
+            DET5 = 17502547, -- Suzaku North Basement (4-1)
+            DET6 = 17502549,
+            DET7 = 17502555, -- Byakko South Basement (3-2)
+            DET8 = 17502557,
         },
+        DETECTORS               =
+        {
+            DET9 = 17502559, -- Genbu North Basement (2-2)
+            DET10 = 17502561,
+            DET11 = 17502563, -- Byakko North Basement (3-1)
+            DET12 = 17502565,
+            DET13 = 17502535, -- Seiryu South Basement (0-1)
+            DET14 = 17502537,
+            DET15 = 17502541, -- Suzaku South Basement (0-2)
+            DET16 = 17502539,
+        }
     },
     npc =
     {
         QM3             = 17502583,
-        CASKET_BASE     = 17502585,
         Y_DOOR_OFFSET   = 17502608,
         B_DOOR_OFFSET   = 17502616,
         Y_LITH_OFFSET   = 17502624,

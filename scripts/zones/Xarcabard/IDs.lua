@@ -19,7 +19,7 @@ zones[xi.zone.XARCABARD] =
         NOTHING_OUT_OF_ORDINARY        = 6417,  -- There is nothing out of the ordinary here.
         FELLOW_MESSAGE_OFFSET          = 6432,  -- I'm ready. I suppose.
         CARRIED_OVER_POINTS            = 7014,  -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY        = 7015,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY        = 7015,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER                   = 7016,  -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         CONQUEST_BASE                  = 7070,  -- Tallying conquest results...
         BEASTMEN_BANNER                = 7149,  -- There was a curse on the beastmen's banner!
@@ -32,6 +32,7 @@ zones[xi.zone.XARCABARD] =
         YOU_CANNOT_ENTER_DYNAMIS       = 7862,  -- You cannot enter Dynamis - [Dummy/San d'Oria/Bastok/Windurst/Jeuno/Beaucedine/Xarcabard/Valkurm/Buburimu/Qufim/Tavnazia] for <number> [day/days] (Vana'diel time).
         PLAYERS_HAVE_NOT_REACHED_LEVEL = 7864,  -- Players who have not reached level <number> are prohibited from entering Dynamis.
         DYNA_NPC_DEFAULT_MESSAGE       = 7901,  -- There is a symbol carved into the rock here.
+        GARRISON_BASE                  = 8056,  -- Hm? What is this? %? How do I know this is not some [San d'Orian/Bastokan/Windurstian] trick?
         PLAYER_OBTAINS_ITEM            = 8179,  -- <name> obtains <item>!
         UNABLE_TO_OBTAIN_ITEM          = 8180,  -- You were unable to obtain the item.
         PLAYER_OBTAINS_TEMP_ITEM       = 8181,  -- <name> obtains the temporary item: <item>!
@@ -47,6 +48,8 @@ zones[xi.zone.XARCABARD] =
         VOIDWALKER_UPGRADE_KI_2        = 11490, -- The <keyitem> takes on a deeper, richer hue and becomes <keyitem>!
         VOIDWALKER_BREAK_KI            = 11491, -- The <keyitem> shatters into tiny fragments.
         VOIDWALKER_OBTAIN_KI           = 11492, -- Obtained key item: <keyitem>!
+        LEARNS_SPELL                   = 11541, -- <name> learns <spell>!
+        UNCANNY_SENSATION              = 11543, -- You are assaulted by an uncanny sensation.
         COMMON_SENSE_SURVIVAL          = 11550, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
@@ -110,7 +113,6 @@ zones[xi.zone.XARCABARD] =
     },
     npc =
     {
-        CASKET_BASE        = 17236254,
         OVERSEER_BASE      = 17236289, -- Jeantelas_RK in npc_list
         BOREAL_TIGER_QM    = 17236307, -- qm2 in npc_list
         BOREAL_COEURL_QM   = 17236308, -- qm3 in npc_list

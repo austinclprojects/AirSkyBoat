@@ -1,14 +1,12 @@
 -----------------------------------
---
 -- Zone: Eastern_Altepa_Desert (114)
---
 -----------------------------------
-local ID = require("scripts/zones/Eastern_Altepa_Desert/IDs")
-require("scripts/quests/i_can_hear_a_rainbow")
-require("scripts/globals/chocobo_digging")
-require("scripts/globals/conquest")
-require("scripts/globals/chocobo")
-require("scripts/missions/amk/helpers")
+local ID = require('scripts/zones/Eastern_Altepa_Desert/IDs')
+require('scripts/quests/i_can_hear_a_rainbow')
+require('scripts/globals/chocobo_digging')
+require('scripts/globals/conquest')
+require('scripts/globals/chocobo')
+require('scripts/missions/amk/helpers')
 -----------------------------------
 local zone_object = {}
 
@@ -17,8 +15,10 @@ zone_object.onChocoboDig = function(player, precheck)
 end
 
 zone_object.onInitialize = function(zone)
-    UpdateNMSpawnPoint(ID.mob.NANDI)
-    GetMobByID(ID.mob.NANDI):setRespawnTime(math.random(3600, 4200))
+    if xi.settings.main.ENABLE_WOTG == 1 then
+        UpdateNMSpawnPoint(ID.mob.NANDI)
+        GetMobByID(ID.mob.NANDI):setRespawnTime(math.random(3600, 4200))
+    end
 
     UpdateNMSpawnPoint(ID.mob.CACTROT_RAPIDO)
     GetMobByID(ID.mob.CACTROT_RAPIDO):setRespawnTime(math.random(900, 10800))
@@ -46,11 +46,21 @@ zone_object.onZoneIn = function(player, prevZone)
     end
 
     -- AMK06/AMK07
-    if xi.settings.ENABLE_AMK == 1 then
+    if xi.settings.main.ENABLE_AMK == 1 then
         xi.amk.helpers.tryRandomlyPlaceDiggingLocation(player)
     end
 
     return cs
+end
+
+zone_object.onZoneOut = function(player)
+    if player:hasStatusEffect(xi.effect.BATTLEFIELD) then
+        player:delStatusEffect(xi.effect.BATTLEFIELD)
+    end
+end
+
+zone_object.onGameDay = function()
+    SetServerVariable("[DIG]ZONE114_ITEMS", 0)
 end
 
 zone_object.onRegionEnter = function(player, region)

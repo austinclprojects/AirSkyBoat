@@ -1,12 +1,12 @@
 -----------------------------------
 -- Zone: Sauromugue_Champaign (120)
 -----------------------------------
-local ID = require("scripts/zones/Sauromugue_Champaign/IDs")
-require("scripts/quests/i_can_hear_a_rainbow")
-require("scripts/globals/chocobo_digging")
-require("scripts/globals/conquest")
-require("scripts/globals/missions")
-require("scripts/globals/zone")
+local ID = require('scripts/zones/Sauromugue_Champaign/IDs')
+require('scripts/quests/i_can_hear_a_rainbow')
+require('scripts/globals/chocobo_digging')
+require('scripts/globals/conquest')
+require('scripts/globals/missions')
+require('scripts/globals/zone')
 -----------------------------------
 local zone_object = {}
 
@@ -48,6 +48,9 @@ zone_object.onGameDay = function(zone)
     end
 
     GetNPCByID(ID.npc.QM2 + math.random(0, 5)):setLocalVar('Quest[2][70]Option', 1) -- Determine which QM is active today for THF AF2
+
+    -- Chocobo digging
+    SetServerVariable("[DIG]ZONE120_ITEMS", 0)
 end
 
 zone_object.onEventUpdate = function(player, csid, option)

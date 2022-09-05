@@ -1,16 +1,16 @@
 -----------------------------------
 -- Zone: Tahrongi_Canyon (117)
 -----------------------------------
-local ID = require("scripts/zones/Tahrongi_Canyon/IDs")
-require("scripts/quests/i_can_hear_a_rainbow")
-require("scripts/globals/chocobo_digging")
-require("scripts/globals/conquest")
-require("scripts/globals/missions")
-require("scripts/globals/chocobo")
-require("scripts/globals/world")
-require("scripts/globals/helm")
-require("scripts/globals/zone")
-require("scripts/missions/amk/helpers")
+local ID = require('scripts/zones/Tahrongi_Canyon/IDs')
+require('scripts/quests/i_can_hear_a_rainbow')
+require('scripts/globals/chocobo_digging')
+require('scripts/globals/conquest')
+require('scripts/globals/missions')
+require('scripts/globals/chocobo')
+require('scripts/globals/world')
+require('scripts/globals/helm')
+require('scripts/globals/zone')
+require('scripts/missions/amk/helpers')
 -----------------------------------
 local zone_object = {}
 
@@ -36,7 +36,7 @@ zone_object.onZoneIn = function(player, prevZone)
     end
 
     -- AMK06/AMK07
-    if xi.settings.ENABLE_AMK == 1 then
+    if xi.settings.main.ENABLE_AMK == 1 then
         xi.amk.helpers.tryRandomlyPlaceDiggingLocation(player)
     end
 
@@ -45,6 +45,10 @@ end
 
 zone_object.onConquestUpdate = function(zone, updatetype)
     xi.conq.onConquestUpdate(zone, updatetype)
+end
+
+zone_object.onGameDay = function()
+    SetServerVariable("[DIG]ZONE117_ITEMS", 0)
 end
 
 zone_object.onRegionEnter = function(player, region)
@@ -60,16 +64,21 @@ zone_object.onEventFinish = function(player, csid, option)
 end
 
 local function isHabrokWeather(weather)
-    return (weather == xi.weather.DUST_STORM or weather == xi.weather.SAND_STORM or weather == xi.weather.WIND or weather == xi.weather.GALES)
+    return weather == xi.weather.DUST_STORM or
+        weather == xi.weather.SAND_STORM or
+        weather == xi.weather.WIND or
+        weather == xi.weather.GALES
 end
 
 zone_object.onZoneWeatherChange = function(weather)
-    local habrok = GetMobByID(ID.mob.HABROK)
+    if xi.settings.main.ENABLE_WOTG == 1 then
+        local habrok = GetMobByID(ID.mob.HABROK)
 
-    if habrok:isSpawned() and not isHabrokWeather(weather) then
-        DespawnMob(ID.mob.HABROK)
-    elseif not habrok:isSpawned() and isHabrokWeather(weather) and os.time() > habrok:getLocalVar("pop") then
-        SpawnMob(ID.mob.HABROK)
+        if habrok:isSpawned() and not isHabrokWeather(weather) then
+            DespawnMob(ID.mob.HABROK)
+        elseif not habrok:isSpawned() and isHabrokWeather(weather) and os.time() > habrok:getLocalVar("pop") then
+            SpawnMob(ID.mob.HABROK)
+        end
     end
 end
 

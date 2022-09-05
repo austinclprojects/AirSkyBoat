@@ -18,12 +18,17 @@ zones[xi.zone.ULEGUERAND_RANGE] =
         NOTHING_OUT_OF_ORDINARY  = 6417, -- There is nothing out of the ordinary here.
         FELLOW_MESSAGE_OFFSET    = 6432, -- I'm ready. I suppose.
         CARRIED_OVER_POINTS      = 7014, -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY  = 7015, -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY  = 7015, -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER             = 7016, -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         CONQUEST_BASE            = 7070, -- Tallying conquest results...
         SOMETHING_GLITTERING     = 7341, -- You see something glittering beneath the surface of the ice.
         WHAT_LIES_BENEATH        = 7342, -- There are many cold <item> scattered around the area. Could someone be trying to melt the ice to retrieve what lies beneath?
         SOMETHING_GLITTERING_BUT = 7343, -- You see something glittering below the surface here, but the ice encases it completely.
+        FLUTTERING_CLOTH         = 7395, -- A scrap of cloth flutters wildly in the wind...<
+        SPAWN_GEUSH              = 7396, -- A huge beast is charging towards the <item>!
+        GEUSH_COUNTER            = 7398, -- Geush Urvan uses Counterstance!
+        GEUSH_COUNTER_OFF        = 7399, -- Geush Urvan's Counterstance effect wears off.
+        RABBIT_TRACKS            = 7400, -- There are fresh rabbit tracks here. The creature must still be in the vicinity.
         HOMEPOINT_SET            = 8335, -- Home point set!
     },
     mob =
@@ -46,10 +51,14 @@ zones[xi.zone.ULEGUERAND_RANGE] =
             [16798054] = 16798056, -- -631.268 -40.257 0.709
             [16798055] = 16798056, -- -513.999 -40.541 -34.928
         },
-        JORMUNGAND  = 16797969,
-        GEUSH_URVAN = 16798078,
-        WHITE_CONEY = 16798079,
-        BLACK_CONEY = 16798080,
+        JORMUNGAND       = 16797969,
+        GEUSH_URVAN      = 16798078,
+        WHITE_CONEY      = 16798079,
+        BLACK_CONEY      = 16798080,
+        MAIDEN_PH        = 16797808,
+        SNOW_MAIDEN      = 16797809,
+        FATHER_FROST     = 16797810,
+        MOUNTAIN_WORM_NM = 16798031,
     },
     npc =
     {

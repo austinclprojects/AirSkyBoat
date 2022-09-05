@@ -1,13 +1,13 @@
 -----------------------------------
 -- Zone: West_Sarutabaruta (115)
 -----------------------------------
-local ID = require("scripts/zones/West_Sarutabaruta/IDs")
-require("scripts/quests/i_can_hear_a_rainbow")
-require("scripts/globals/chocobo_digging")
-require("scripts/globals/conquest")
-require("scripts/globals/missions")
-require("scripts/globals/helm")
-require("scripts/globals/zone")
+local ID = require('scripts/zones/West_Sarutabaruta/IDs')
+require('scripts/quests/i_can_hear_a_rainbow')
+require('scripts/globals/chocobo_digging')
+require('scripts/globals/conquest')
+require('scripts/globals/missions')
+require('scripts/globals/helm')
+require('scripts/globals/zone')
 -----------------------------------
 local zone_object = {}
 
@@ -40,8 +40,18 @@ zone_object.onZoneIn = function( player, prevZone)
     return cs
 end
 
+zone_object.onZoneOut = function(player)
+    if player:hasStatusEffect(xi.effect.BATTLEFIELD) then
+        player:delStatusEffect(xi.effect.BATTLEFIELD)
+    end
+end
+
 zone_object.onConquestUpdate = function(zone, updatetype)
     xi.conq.onConquestUpdate(zone, updatetype)
+end
+
+zone_object.onGameDay = function()
+    SetServerVariable("[DIG]ZONE115_ITEMS", 0)
 end
 
 zone_object.onRegionEnter = function( player, region)

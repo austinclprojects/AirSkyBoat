@@ -23,10 +23,13 @@
 #include "../common/logging.h"
 #include "../common/md52.h"
 
+#include <algorithm>
+#include <cctype>
 #include <charconv>
 #include <cstdio>
 #include <cstdlib>
 #include <cstring>
+#include <string>
 
 #ifdef _MSC_VER
 #include <intrin.h>
@@ -694,7 +697,8 @@ std::string UnpackSoultrapperName(uint8 input[])
     uint8       remainder = 0;
     uint8       shift     = 1;
     uint8       maxSize   = 13; // capped at 13 based on examples like GoblinBountyH
-    std::string output    = "";
+    char        indexChar;
+    std::string output = "";
 
     // Unpack and shift 7-bit to 8-bit
     for (uint8 i = 0; i <= maxSize; ++i)
@@ -709,7 +713,11 @@ std::string UnpackSoultrapperName(uint8 input[])
         }
 
         // uint8 orvalue = tempLeft | remainder;
-        output = output + (char)(tempLeft | remainder);
+        indexChar = (char)(tempLeft | remainder);
+        if (indexChar >= '0' && indexChar <= 'z')
+        {
+            output = output + (char)(tempLeft | remainder);
+        }
 
         remainder = tempRight << (7 - shift);
         if (remainder & 128)
@@ -719,7 +727,10 @@ std::string UnpackSoultrapperName(uint8 input[])
 
         if (shift == 7)
         {
-            output    = output + char(remainder);
+            if (char(remainder) >= '0' && char(remainder) <= 'z')
+            {
+                output = output + char(remainder);
+            }
             remainder = 0;
             shift     = 1;
         }
@@ -767,8 +778,34 @@ std::vector<std::string> split(std::string const& s, std::string const& delimite
     return res;
 }
 
+std::string to_lower(std::string const& s)
+{
+    // clang-format off
+    std::string data = s;
+    std::transform(data.begin(), data.end(), data.begin(),
+    [](unsigned char c)
+    {
+        return std::tolower(c);
+    });
+    // clang-format on
+    return data;
+}
+
+std::string to_upper(std::string const& s)
+{
+    // clang-format off
+    std::string data = s;
+    std::transform(data.begin(), data.end(), data.begin(),
+    [](unsigned char c)
+    {
+        return std::toupper(c);
+    });
+    // clang-format on
+    return data;
+}
+
 // https://stackoverflow.com/questions/313970/how-to-convert-an-instance-of-stdstring-to-lower-case
-std::string trim(const std::string& str, const std::string& whitespace)
+std::string trim(std::string const& str, std::string const& whitespace)
 {
     const auto strBegin = str.find_first_not_of(whitespace);
     if (strBegin == std::string::npos)

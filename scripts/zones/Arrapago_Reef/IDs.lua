@@ -17,7 +17,7 @@ zones[xi.zone.ARRAPAGO_REEF] =
         KEYITEM_OBTAINED          = 6393, -- Obtained key item: <keyitem>.
         NOTHING_OUT_OF_ORDINARY   = 6404, -- There is nothing out of the ordinary here.
         CARRIED_OVER_POINTS       = 7001, -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY   = 7002, -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY   = 7002, -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER              = 7003, -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         FISHING_MESSAGE_OFFSET    = 7054, -- You can't fish here.
         STAGING_GATE_CLOSER       = 7314, -- You must move closer.
@@ -51,15 +51,15 @@ zones[xi.zone.ARRAPAGO_REEF] =
     },
     mob =
     {
-        BLOODY_BONES_PH       =
+        BLOODY_BONES_PH =
         {
             [16998653] = 16998655, -- 136.234 -6.831 468.779
         },
-        MEDUSA                = 16998862,
-        LIL_APKALLU           = 16998871,
-        VELIONIS              = 16998872,
-        ZAREEHKL_THE_JUBILANT = 16998873,
-        NUHN                  = 16998874,
+        MEDUSA                = DYNAMIC_LOOKUP,
+        LIL_APKALLU           = DYNAMIC_LOOKUP,
+        VELIONIS              = DYNAMIC_LOOKUP,
+        ZAREEHKL_THE_JUBILANT = DYNAMIC_LOOKUP,
+        NUHN                  = DYNAMIC_LOOKUP,
     },
     npc =
     {

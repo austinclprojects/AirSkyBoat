@@ -16,7 +16,7 @@ zones[xi.zone.RIVERNE_SITE_A01] =
         KEYITEM_OBTAINED          = 6393, -- Obtained key item: <keyitem>.
         NOTHING_OUT_OF_ORDINARY   = 6404, -- There is nothing out of the ordinary here.
         CARRIED_OVER_POINTS       = 7001, -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY   = 7002, -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY   = 7002, -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER              = 7003, -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         CONQUEST_BASE             = 7057, -- Tallying conquest results...
         A_GLOWING_MIST            = 7252, -- A glowing mist of ever-changing proportions floats before you...
@@ -26,25 +26,31 @@ zones[xi.zone.RIVERNE_SITE_A01] =
         SD_HAS_GROWN              = 7596, -- The spatial displacement has grown.
         SPACE_SEEMS_DISTORTED     = 7597, -- The space around you seems oddly distorted and disrupted.
         MONUMENT                  = 7604, -- Something has been engraved on this stone, but the message is too difficult to make out.
+        INSECT_WINGS              = 7728, -- There are tiny insect wings scattered all around here.
         HOMEPOINT_SET             = 7732, -- Home point set!
     },
     mob =
     {
+        AIATAR_PH =
+        {
+            [16900305] = 16900306,
+        },
+        ZIRYU =
+        {
+            16900315,
+            16900316,
+            16900317,
+            16900318,
+        },
         HELIODROMOS_PH_OFFSET    = 16900107,
         HELIODROMOS_OFFSET       = 16900110,
         CARMINE_DOBSONFLY_OFFSET = 16900230,
+        SHIELDTRAP               = 16900320,
     },
     npc =
     {
         DISPLACEMENT_OFFSET = 16900334,
-    },
-    AIATAR_PH =
-    {
-        [16900301] = 16900306,
-        [16900302] = 16900306,
-        [16900303] = 16900306,
-        [16900304] = 16900306,
-        [16900305] = 16900306,
+        SPATIAL_OURYU       = 16900358,
     },
 }
 

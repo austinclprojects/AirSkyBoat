@@ -18,7 +18,7 @@ zones[xi.zone.BOSTAUNIEUX_OUBLIETTE] =
         NOTHING_OUT_OF_ORDINARY  = 6563,  -- There is nothing out of the ordinary here.
         FELLOW_MESSAGE_OFFSET    = 6578,  -- I'm ready. I suppose.
         CARRIED_OVER_POINTS      = 7160,  -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY  = 7161,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY  = 7161,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER             = 7162,  -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         FISHING_MESSAGE_OFFSET   = 7216,  -- You can't fish here.
         CHUMIA_DIALOG            = 7316,  -- Welcome to Bostaunieux Oubliette...
@@ -33,6 +33,8 @@ zones[xi.zone.BOSTAUNIEUX_OUBLIETTE] =
         PLAYER_OBTAINS_TEMP_ITEM = 10594, -- <name> obtains the temporary item: <item>!
         ALREADY_POSSESS_TEMP     = 10595, -- You already possess that temporary item.
         NO_COMBINATION           = 10600, -- You were unable to enter a combination.
+        LEARNS_SPELL             = 10624, -- <name> learns <spell>!
+        UNCANNY_SENSATION        = 10626, -- You are assaulted by an uncanny sensation.
         COMMON_SENSE_SURVIVAL    = 10633, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
@@ -66,10 +68,11 @@ zones[xi.zone.BOSTAUNIEUX_OUBLIETTE] =
         PHANDURON_THE_CONDEMNED = 17461343,
         BLOODSUCKER             = 17461478,
         BODACH                  = 17461479,
+        MANES                   = 17461471,
+        SHII                    = 17461315,
     },
     npc =
     {
-        CASKET_BASE = 17461488,
     },
 }
 

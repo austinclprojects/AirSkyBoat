@@ -22,7 +22,7 @@ zones[xi.zone.OUTER_HORUTOTO_RUINS] =
         KEYITEM_OBTAINED         = 6598,  -- Obtained key item: <keyitem>.
         FELLOW_MESSAGE_OFFSET    = 6624,  -- I'm ready. I suppose.
         CARRIED_OVER_POINTS      = 7206,  -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY  = 7207,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY  = 7207,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER             = 7208,  -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         GEOMAGNETRON_ATTUNED     = 7217,  -- Your <keyitem> has been attuned to a geomagnetic fount in the corresponding locale.
         DOOR_FIRMLY_SHUT         = 7262,  -- The door is firmly shut.
@@ -61,7 +61,6 @@ zones[xi.zone.OUTER_HORUTOTO_RUINS] =
     },
     npc =
     {
-        CASKET_BASE        = 17572223,
         GATE_MAGICAL_GIZMO = 17572248,
         TREASURE_CHEST     = 17572290,
     },

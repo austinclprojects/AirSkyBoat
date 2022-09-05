@@ -5,12 +5,15 @@
 -- Recast Time: 3:00
 -- Duration: Instant
 -----------------------------------
-require("scripts/settings/main")
+require("scripts/globals/settings")
 require("scripts/globals/status")
 -----------------------------------
 local ability_object = {}
 
 ability_object.onAbilityCheck = function(player, target, ability)
+    if player:getFreeSlotsCount() == 0 then
+        return xi.msg.basic.FULL_INVENTORY, 0
+    end
     return 0, 0
 end
 

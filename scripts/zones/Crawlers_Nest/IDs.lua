@@ -21,7 +21,7 @@ zones[xi.zone.CRAWLERS_NEST] =
         SENSE_OF_FOREBODING           = 6595,  -- You are suddenly overcome with a sense of foreboding...
         FELLOW_MESSAGE_OFFSET         = 6609,  -- I'm ready. I suppose.
         CARRIED_OVER_POINTS           = 7191,  -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY       = 7192,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY       = 7192,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER                  = 7193,  -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         GEOMAGNETRON_ATTUNED          = 7202,  -- Your <keyitem> has been attuned to a geomagnetic fount in the corresponding locale.
         CHEST_UNLOCKED                = 7260,  -- You unlock the chest!
@@ -37,16 +37,15 @@ zones[xi.zone.CRAWLERS_NEST] =
         ALREADY_POSSESS_TEMP          = 7353,  -- You already possess that temporary item.
         NO_COMBINATION                = 7358,  -- You were unable to enter a combination.
         REGIME_REGISTERED             = 9436,  -- New training regime registered!
+        LEARNS_SPELL                  = 11354, -- <name> learns <spell>!
+        UNCANNY_SENSATION             = 11356, -- You are assaulted by an uncanny sensation.
         COMMON_SENSE_SURVIVAL         = 11388, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
     {
         DEMONIC_TIPHIA_PH =
         {
-            [17584392] = 17584398, -- -103.000 -1.000 311.000
-            [17584395] = 17584398, -- -89.000 -1.000 301.000
             [17584396] = 17584398, -- -75.000 -1.000 299.000
-            [17584391] = 17584398, -- -101.000 -1.000 285.000
         },
         AWD_GOGGIE          = 17584135,
         DYNAST_BEETLE       = 17584312,
@@ -56,7 +55,6 @@ zones[xi.zone.CRAWLERS_NEST] =
     },
     npc =
     {
-        CASKET_BASE     = 17584433,
         TREASURE_CHEST  = 17584475,
         TREASURE_COFFER = 17584476,
     },

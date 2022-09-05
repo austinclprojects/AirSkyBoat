@@ -17,7 +17,7 @@ zones[xi.zone.ABYSSEA_TAHRONGI] =
         KEYITEM_OBTAINED            = 6393, -- Obtained key item: <keyitem>.
         CRUOR_TOTAL                 = 6988, -- Obtained <number> cruor. (Total: <number>)
         CARRIED_OVER_POINTS         = 7001, -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY     = 7002, -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY     = 7002, -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER                = 7003, -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         LIGHTS_MESSAGE_1            = 7322, -- Visitant Light Intensity Pearlescent: <number> / Ebon: <number> Golden: <number> / Silvery: <number>
         LIGHTS_MESSAGE_2            = 7323, -- Azure: <number> / Ruby: <number> / Amber: <number>
@@ -96,7 +96,6 @@ zones[xi.zone.ABYSSEA_TAHRONGI] =
             --  [16961973] = {'qm20',               {}, {xi.ki.FAT_LINED_COCKATRICE_SKIN, xi.ki.SODDEN_SANDWORM_HUSK, xi.ki.LUXURIANT_MANTICORE_MANE, xi.ki.STICKY_GNAT_WING}, 16961950}, -- Glavoid
             --  [16961974] = {'qm21',               {},                                                     {xi.ki.OVERGROWN_MANDRAGORA_FLOWER, xi.ki.CHIPPED_SANDWORM_TOOTH}, 16961951}, -- Lacovie
         },
-        STURDY_PYXIS_BASE = 16961991,
     },
 }
 

@@ -452,7 +452,7 @@ xi.quest.id =
         STORMS_OF_FATE                  = 86,
         MIXED_SIGNALS                   = 87,
         SHADOWS_OF_THE_DEPARTED         = 88,
-        APOCALYPSE_NIGH                 = 89,
+        APOCALYPSE_NIGH                 = 89, -- ± Converted
         LURE_OF_THE_WILDCAT             = 90, -- ±
         THE_ROAD_TO_AHT_URHGAN          = 91, -- + Converted
         CHOCOBO_ON_THE_LOOSE            = 92, -- + Converted
@@ -639,12 +639,12 @@ xi.quest.id =
         AN_UNDYING_PLEDGE               = 149,
 
         -- Misc (160-165)
-        WRATH_OF_THE_OPO_OPOS           = 160,
-        WANDERING_SOULS                 = 161,
-        SOUL_SEARCHING                  = 162,
+        WRATH_OF_THE_OPO_OPOS           = 160, -- ± Converted
+        WANDERING_SOULS                 = 161, -- ± Converted
+        SOUL_SEARCHING                  = 162, -- ± Converted
         DIVINE_MIGHT                    = 163, -- ±
         DIVINE_MIGHT_REPEAT             = 164, -- ±
-        OPEN_SESAME                     = 165,
+        OPEN_SESAME                     = 165, -- ± Converted
 
         -- Rabao (192-201)
         DONT_FORGET_THE_ANTIDOTE        = 192, -- ±
@@ -734,23 +734,23 @@ xi.quest.id =
     -----------------------------------
     [xi.quest.area[xi.quest.log_id.CRYSTAL_WAR]] =
     {
-        LOST_IN_TRANSLOCATION            = 0, -- +
-        MESSAGE_ON_THE_WINDS             = 1, -- + Converted
+        LOST_IN_TRANSLOCATION            = 0,  -- + Converted
+        MESSAGE_ON_THE_WINDS             = 1,  -- + Converted
         THE_WEEKLY_ADVENTURER            = 2,
         HEALING_HERBS                    = 3,
         REDEEMING_ROCKS                  = 4,
-        THE_DAWN_OF_DELECTABILITY        = 5, -- + Converted
-        A_LITTLE_KNOWLEDGE               = 6, -- +
+        THE_DAWN_OF_DELECTABILITY        = 5,  -- + Converted
+        A_LITTLE_KNOWLEDGE               = 6,  -- +
         THE_FIGHTING_FOURTH              = 7,
-        SNAKE_ON_THE_PLAINS              = 8, -- +
-        STEAMED_RAMS                     = 9, -- +
+        SNAKE_ON_THE_PLAINS              = 8,  -- +
+        STEAMED_RAMS                     = 9,  -- +
         SEEING_SPOTS                     = 10, -- + Converted
         THE_FLIPSIDE_OF_THINGS           = 11,
         BETTER_PART_OF_VALOR             = 12,
         FIRES_OF_DISCONTENT              = 13,
         HAMMERING_HEARTS                 = 14, -- + Converted
-        GIFTS_OF_THE_GRIFFON             = 15,
-        CLAWS_OF_THE_GRIFFON             = 16,
+        GIFTS_OF_THE_GRIFFON             = 15, -- + Converted
+        CLAWS_OF_THE_GRIFFON             = 16, -- + Converted
         THE_TIGRESS_STIRS                = 17, -- +
         THE_TIGRESS_STRIKES              = 18,
         LIGHT_IN_THE_DARKNESS            = 19, -- + Converted
@@ -758,8 +758,8 @@ xi.quest.id =
         EVIL_AT_THE_INLET                = 21,
         THE_FUMBLING_FRIAR               = 22,
         REQUIEM_FOR_THE_DEPARTED         = 23,
-        BOY_AND_THE_BEAST                = 24,
-        WRATH_OF_THE_GRIFFON             = 25,
+        BOY_AND_THE_BEAST                = 24, -- + Converted
+        WRATH_OF_THE_GRIFFON             = 25, -- + Converted
         THE_LOST_BOOK                    = 26, -- + Converted
         KNOT_QUITE_THERE                 = 27,
         A_MANIFEST_PROBLEM               = 28,
@@ -771,22 +771,22 @@ xi.quest.id =
         SEEING_BLOOD_RED                 = 34,
         STORM_ON_THE_HORIZON             = 35,
         FIRE_IN_THE_HOLE                 = 36,
-        PERILS_OF_THE_GRIFFON            = 37,
-        IN_A_HAZE_OF_GLORY               = 38,
+        PERILS_OF_THE_GRIFFON            = 37, -- + Converted
+        IN_A_HAZE_OF_GLORY               = 38, -- + Converted
         WHEN_ONE_MAN_IS_NOT_ENOUGH       = 39,
         A_FEAST_FOR_GNATS                = 40,
         SAY_IT_WITH_A_HANDBAG            = 41, -- Can be completed, but reward latent not implemented
         QUELLING_THE_STORM               = 42,
         HONOR_UNDER_FIRE                 = 43,
-        THE_PRICE_OF_VALOR               = 44,
-        BONDS_THAT_NEVER_DIE             = 45,
+        THE_PRICE_OF_VALOR               = 44, -- + Converted
+        BONDS_THAT_NEVER_DIE             = 45, -- + Converted
         THE_LONG_MARCH_NORTH             = 46,
         THE_FORBIDDEN_PATH               = 47,
         A_JEWELERS_LAMENT                = 48,
         BENEATH_THE_MASK                 = 49,
         WHAT_PRICE_LOYALTY               = 50,
-        SONGBIRDS_IN_A_SNOWSTORM         = 51,
-        BLOOD_OF_HEROES                  = 52,
+        SONGBIRDS_IN_A_SNOWSTORM         = 51, -- + Converted
+        BLOOD_OF_HEROES                  = 52, -- + Converted
         SINS_OF_THE_MOTHERS              = 53,
         HOWL_FROM_THE_HEAVENS            = 54,
         SUCCOR_TO_THE_SIDHE              = 55,
@@ -794,19 +794,22 @@ xi.quest.id =
         SON_AND_FATHER                   = 57,
         THE_TRUTH_LIES_HID               = 58,
         BONDS_OF_MYTHRIL                 = 59,
-        CHASING_SHADOWS                  = 60,
-        FACE_OF_THE_FUTURE               = 61,
+        CHASING_SHADOWS                  = 60, -- + Converted
+        FACE_OF_THE_FUTURE               = 61, -- + Converted
         MANIFEST_DESTINY                 = 62,
         AT_JOURNEYS_END                  = 63,
-        HER_MEMORIES_HOMECOMING_QUEEN    = 64,
-        HER_MEMORIES_OLD_BEAN            = 65,
-        HER_MEMORIES_THE_FAUX_PAS        = 66,
-        HER_MEMORIES_THE_GRAVE_RESOLVE   = 67,
-        HER_MEMORIES_OPERATION_CUPID     = 68,
-        HER_MEMORIES_CARNELIAN_FOOTFALLS = 69,
+        HER_MEMORIES_HOMECOMING_QUEEN    = 64, -- + Converted
+        HER_MEMORIES_OLD_BEAN            = 65, -- + Converted
+        HER_MEMORIES_THE_FAUX_PAS        = 66, -- + Converted
+        HER_MEMORIES_THE_GRAVE_RESOLVE   = 67, -- + Converted
+        HER_MEMORIES_OPERATION_CUPID     = 68, -- + Converted
+        HER_MEMORIES_CARNELIAN_FOOTFALLS = 69, -- + Converted
         HER_MEMORIES_AZURE_FOOTFALLS     = 70,
         HER_MEMORIES_VERDURE_FOOTFALLS   = 71,
-        HER_MEMORIES_OF_MALIGN_MALADIES  = 72,
+        HER_MEMORIES_OF_MALIGN_MALADIES  = 72, -- + Converted
+        CHAMPION_OF_THE_DAWN             = 73,
+        THE_DAWN_ALSO_RISES              = 74,
+        A_FORBIDDEN_REUNION              = 75,
         GUARDIAN_OF_THE_VOID             = 80,
         DRAFTED_BY_THE_DUCHY             = 81,
         BATTLE_ON_A_NEW_FRONT            = 82,
@@ -1245,8 +1248,8 @@ local function getVarPrefix(areaId, questId)
 end
 
 -- Interaction Framework Helper Functions
-xi.quest.addVar = function(player, areaId, questId, name, value)
-    return player:addCharVar(getVarPrefix(areaId, questId) .. name, value)
+xi.quest.incrementVar = function(player, areaId, questId, name, value)
+    return player:incrementCharVar(getVarPrefix(areaId, questId) .. name, value)
 end
 
 xi.quest.getVar = function(player, areaId, questId, name)

@@ -4,7 +4,7 @@
 -- Type: Quest Giver
 -- !pos -50.858 1.777 -31.141 237
 -----------------------------------
-require("scripts/settings/main")
+require("scripts/globals/settings")
 require("scripts/globals/quests")
 local ID = require("scripts/zones/Metalworks/IDs")
 -----------------------------------
@@ -12,7 +12,7 @@ local entity = {}
 
 entity.onTrade = function(player, npc, trade)
 
-    if (player:getQuestStatus(xi.quest.log_id.BASTOK, xi.quest.id.bastok.STARDUST) ~= QUEST_AVAILABLE) then
+    if (player:getQuestStatus(xi.quest.log_id.BASTOK, xi.quest.id.bastok.STARDUST) ~= QUEST_AVAILABLE) and not player:needToZone() then
         if (trade:hasItemQty(503, 1) and trade:getItemCount() == 1) then
             player:startEvent(555)
         end
@@ -38,8 +38,9 @@ entity.onEventFinish = function(player, csid, option)
         player:addQuest(xi.quest.log_id.BASTOK, xi.quest.id.bastok.STARDUST)
     elseif (csid == 555) then
         player:tradeComplete()
-        player:addGil(xi.settings.GIL_RATE * 300)
-        player:messageSpecial(ID.text.GIL_OBTAINED, xi.settings.GIL_RATE * 300)
+        player:needToZone(true)
+        player:addGil(xi.settings.main.GIL_RATE * 300)
+        player:messageSpecial(ID.text.GIL_OBTAINED, xi.settings.main.GIL_RATE * 300)
         player:completeQuest(xi.quest.log_id.BASTOK, xi.quest.id.bastok.STARDUST)
     end
 end

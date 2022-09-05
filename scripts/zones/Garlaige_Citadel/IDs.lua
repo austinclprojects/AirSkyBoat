@@ -19,7 +19,7 @@ zones[xi.zone.GARLAIGE_CITADEL] =
         SENSE_OF_FOREBODING      = 6564,  -- You are suddenly overcome with a sense of foreboding...
         FELLOW_MESSAGE_OFFSET    = 6578,  -- I'm ready. I suppose.
         CARRIED_OVER_POINTS      = 7160,  -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY  = 7161,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY  = 7161,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER             = 7162,  -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         GEOMAGNETRON_ATTUNED     = 7171,  -- Your <keyitem> has been attuned to a geomagnetic fount in the corresponding locale.
         DEVICE_NOT_WORKING       = 7241,  -- The device is not working.
@@ -38,7 +38,7 @@ zones[xi.zone.GARLAIGE_CITADEL] =
         CHEST_UNLOCKED           = 7334,  -- You unlock the chest!
         ITEMS_ITEMS_LA_LA        = 7461,  -- You can hear a strange voice... Items, items, la la la la la
         GOBLIN_SLIPPED_AWAY      = 7467,  -- The Goblin slipped away when you were not looking...
-        YOU_COULD_OPEN_THE_GATE  = 7519,  -- If only you had the %, you could open the banishing gate.
+        YOU_COULD_OPEN_THE_GATE  = 7519,  -- If only you had %, you could open the banishing gate...
         THE_GATE_OPENS_FOR_YOU   = 7520,  -- By the power of your %, the gate opens for you.
         COMBINE_INTO_A_CHUNK     = 7522,  -- You combine the % you have collected into a single chunk.
         PLAYER_OBTAINS_ITEM      = 7527,  -- <name> obtains <item>!
@@ -47,6 +47,8 @@ zones[xi.zone.GARLAIGE_CITADEL] =
         ALREADY_POSSESS_TEMP     = 7530,  -- You already possess that temporary item.
         NO_COMBINATION           = 7535,  -- You were unable to enter a combination.
         REGIME_REGISTERED        = 9613,  -- New training regime registered!
+        LEARNS_SPELL             = 11531, -- <name> learns <spell>!
+        UNCANNY_SENSATION        = 11533, -- You are assaulted by an uncanny sensation.
         COMMON_SENSE_SURVIVAL    = 11564, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
@@ -70,7 +72,6 @@ zones[xi.zone.GARLAIGE_CITADEL] =
     },
     npc =
     {
-        CASKET_BASE           = 17596738,
         BANISHING_GATE_OFFSET = 17596761,
         TREASURE_CHEST        = 17596812,
         TREASURE_COFFER       = 17596813,

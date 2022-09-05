@@ -19,7 +19,7 @@ zones[xi.zone.MIDDLE_DELKFUTTS_TOWER] =
         SENSE_OF_FOREBODING      = 6568, -- You are suddenly overcome with a sense of foreboding...
         FELLOW_MESSAGE_OFFSET    = 6582, -- I'm ready. I suppose.
         CARRIED_OVER_POINTS      = 7164, -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY  = 7165, -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY  = 7165, -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER             = 7166, -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         FISHING_MESSAGE_OFFSET   = 7220, -- You can't fish here.
         CHEST_UNLOCKED           = 7328, -- You unlock the chest!
@@ -54,8 +54,8 @@ zones[xi.zone.MIDDLE_DELKFUTTS_TOWER] =
         OPHION_PH                =
         {
             [17420513] = 17420529, -- -453 -95.529 -1
-            [17420518] = 17420592, -- -409.937 -95.772 48.785
-            [17420527] = 17420592, -- -384 -95.529 14
+            [17420518] = 17420529, -- -409.937 -95.772 48.785
+            [17420527] = 17420529, -- -384 -95.529 14
         },
         RHOIKOS_PH               =
         {
@@ -67,10 +67,10 @@ zones[xi.zone.MIDDLE_DELKFUTTS_TOWER] =
             [17420593] = 17420592, -- -503 -127.715 24
         },
         BLADE_OF_EVIL_MOB_OFFSET = 17420629,
+        OPHION                   = 17420529,
     },
     npc =
     {
-        CASKET_BASE    = 17420640,
         TREASURE_CHEST = 17420676,
     },
 }

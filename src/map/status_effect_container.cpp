@@ -80,8 +80,8 @@ namespace effects
     // Default effect of statuses are overwrite if equal or higher
     struct EffectParams_t
     {
-        uint32   Flag;
-        string_t Name;
+        uint32      Flag;
+        std::string Name;
         // type will erase all other effects that match
         // example: en- spells, spikes
         uint16 Type;
@@ -785,6 +785,11 @@ void CStatusEffectContainer::DelStatusEffectsByFlag(uint32 flag, bool silent)
     {
         if (PStatusEffect->GetFlag() & flag)
         {
+            // If this is a Nightmare effect flag, it needs to be removed explictly by a cure
+
+            if (!(flag & EFFECTFLAG_DAMAGE
+                && PStatusEffect->GetStatusID() == EFFECT_SLEEP
+                && PStatusEffect->GetSubID() == (uint32)EFFECT_BIO))
             RemoveStatusEffect(PStatusEffect, silent);
         }
     }
@@ -998,7 +1003,7 @@ bool CStatusEffectContainer::ApplyCorsairEffect(CStatusEffect* PStatusEffect, ui
 {
     // Don't process if not a COR roll.
     if (!((PStatusEffect->GetStatusID() >= EFFECT_FIGHTERS_ROLL && PStatusEffect->GetStatusID() <= EFFECT_NATURALISTS_ROLL) ||
-                        (PStatusEffect->GetStatusID() == EFFECT_RUNEISTS_ROLL)))
+          (PStatusEffect->GetStatusID() == EFFECT_RUNEISTS_ROLL)))
     {
         return false;
     }
@@ -1461,7 +1466,7 @@ void CStatusEffectContainer::RemoveAllStatusEffectsInIDRange(EFFECT start, EFFEC
 
 /************************************************************************
  *                                                                       *
- *  Устанавливаем имя эффекта для работы со скриптами                    *
+ *  Install the name of the effect to work with scripts                  *
  *                                                                       *
  ************************************************************************/
 
@@ -1471,12 +1476,25 @@ void CStatusEffectContainer::SetEffectParams(CStatusEffect* StatusEffect)
     XI_DEBUG_BREAK_IF(StatusEffect->GetStatusID() == EFFECT_FOOD && StatusEffect->GetSubID() == 0);
     XI_DEBUG_BREAK_IF(StatusEffect->GetStatusID() == EFFECT_NONE && StatusEffect->GetSubID() == 0);
 
-    string_t name;
-    EFFECT   effect = StatusEffect->GetStatusID();
+    std::string name;
+    EFFECT      effect = StatusEffect->GetStatusID();
 
     // Determine if this is a BRD Song or COR Effect.
-    if (StatusEffect->GetSubID() == 0 || StatusEffect->GetSubID() > 20000 || (effect >= EFFECT_REQUIEM && effect <= EFFECT_NOCTURNE) ||
-        (effect >= EFFECT_DOUBLE_UP_CHANCE && effect <= EFFECT_NATURALISTS_ROLL) || effect == EFFECT_RUNEISTS_ROLL)
+    if (StatusEffect->GetSubID() == 0 ||
+        StatusEffect->GetSubID() > 20000 ||
+        (effect >= EFFECT_REQUIEM && effect <= EFFECT_NOCTURNE) ||
+        (effect >= EFFECT_DOUBLE_UP_CHANCE && effect <= EFFECT_NATURALISTS_ROLL) ||
+        effect == EFFECT_RUNEISTS_ROLL ||
+        effect == EFFECT_DRAIN_DAZE ||
+        effect == EFFECT_ASPIR_DAZE ||
+        effect == EFFECT_HASTE_DAZE ||
+        effect == EFFECT_BATTLEFIELD)
+    {
+        name.insert(0, "globals/effects/");
+        name.insert(name.size(), effects::EffectsParams[effect].Name);
+    }
+    // Determine if this is a Nightmare effect -- Sleep with a Bio sub id
+    else if ((effect == EFFECT_SLEEP && (StatusEffect->GetSubID() == (uint32)EFFECT_BIO)))
     {
         name.insert(0, "globals/effects/");
         name.insert(name.size(), effects::EffectsParams[effect].Name);
@@ -1490,6 +1508,7 @@ void CStatusEffectContainer::SetEffectParams(CStatusEffect* StatusEffect)
             name.insert(name.size(), (const char*)Ptem->getName());
         }
     }
+
     StatusEffect->SetName(name);
     StatusEffect->SetFlag(effects::EffectsParams[effect].Flag);
     StatusEffect->SetType(effects::EffectsParams[effect].Type);
@@ -1584,7 +1603,7 @@ void CStatusEffectContainer::LoadStatusEffects()
             }
             CStatusEffect* PStatusEffect =
                 new CStatusEffect(effectID, (uint16)sql->GetUIntData(1), (uint16)sql->GetUIntData(2),
-                                  sql->GetUIntData(3), duration, (uint16)sql->GetUIntData(5), (uint16)sql->GetUIntData(6),
+                                  sql->GetUIntData(3), duration, sql->GetUIntData(5), (uint16)sql->GetUIntData(6),
                                   (uint16)sql->GetUIntData(7), flags);
 
             PEffectList.push_back(PStatusEffect);
@@ -1784,7 +1803,7 @@ void CStatusEffectContainer::HandleAura(CStatusEffect* PStatusEffect)
                     PMember->StatusEffectContainer->AddStatusEffect(PEffect, true);
                 }
             });
-             // clang-format on
+            // clang-format on
         }
         else if (auraTarget == AURA_TARGET::ENEMIES)
         {
@@ -1884,7 +1903,9 @@ void CStatusEffectContainer::TickRegen(time_point tick)
             {
                 DelStatusEffectSilent(EFFECT_HEALING);
                 m_POwner->takeDamage(damage);
-                WakeUp();
+                if (!(m_POwner->StatusEffectContainer->GetStatusEffect(EFFECT_SLEEP)
+                    && m_POwner->StatusEffectContainer->GetStatusEffect(EFFECT_SLEEP)->GetSubID() == (uint32)EFFECT_BIO))
+                    WakeUp(); // dots dont wake up from nightmare
             }
         }
 
@@ -1905,8 +1926,14 @@ void CStatusEffectContainer::TickRegen(time_point tick)
                         CPetEntity* PPet  = (CPetEntity*)m_POwner->PPet;
                         CItem*      hands = PChar->getEquip(SLOT_HANDS);
 
+                        if (PChar->StatusEffectContainer->HasStatusEffect(EFFECT_AVATARS_FAVOR) &&
+                            ((PPet->m_PetID >= PETID_CARBUNCLE && PPet->m_PetID <= PETID_CAIT_SITH) || PPet->m_PetID == PETID_SIREN))
+                        {
+                            perpetuation = static_cast<int16>(perpetuation * 1.2);
+                        }
+
                         // carbuncle mitts only work on carbuncle
-                        if (hands && hands->getID() == 14062 && PPet->name == "Carbuncle")
+                        if (hands && hands->getID() == 14062 && PPet->m_PetID == PETID_CARBUNCLE)
                         {
                             perpetuation /= 2;
                         }

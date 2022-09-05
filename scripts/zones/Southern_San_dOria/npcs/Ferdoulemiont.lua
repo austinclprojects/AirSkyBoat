@@ -5,8 +5,48 @@
 -----------------------------------
 local ID = require("scripts/zones/Southern_San_dOria/IDs")
 require("scripts/globals/shop")
+require("scripts/globals/pathfind")
 -----------------------------------
 local entity = {}
+
+local path =
+{
+    10.886, 2.200, -95.739, -- Force turn.
+    11.166, 2.200, -95.753,
+    11.166, 2.200, -95.753,
+    11.166, 2.200, -95.753,
+    11.166, 2.200, -95.753,
+    11.166, 2.200, -95.753,
+    11.166, 2.200, -95.753,
+    11.166, 2.200, -95.753,
+    11.166, 2.200, -95.753,
+    11.166, 2.200, -95.753,
+    11.166, 2.200, -95.753,
+    11.166, 2.200, -95.753,
+    11.166, 2.200, -95.753,
+    10.9875, 2.200, -95.963, -- Force turn.
+    11.166, 2.200, -95.753,
+    11.166, 2.200, -95.753,
+    11.166, 2.200, -95.753,
+    11.166, 2.200, -95.753,
+    11.166, 2.200, -95.753,
+    11.166, 2.200, -95.753,
+    11.166, 2.200, -95.753,
+    11.166, 2.200, -95.753,
+    11.166, 2.200, -95.753,
+    11.166, 2.200, -95.753,
+    11.166, 2.200, -95.753,
+    11.166, 2.200, -95.753,
+}
+
+entity.onSpawn = function(npc)
+    npc:initNpcAi()
+    npc:setPos(xi.path.first(path))
+end
+
+entity.onPath = function(npc)
+    xi.path.patrol(npc, path)
+end
 
 entity.onTrade = function(player, npc, trade)
 end
@@ -28,6 +68,7 @@ entity.onTrigger = function(player, npc)
         4997,    16, 3,    -- Scroll of Knight's Minne
         4998,   864, 3,    -- Scroll of Knight's Minne II
         4999,  5148, 3,    -- Scroll of Knight's Minne III
+        5001, 50692, 3,    -- Scroll of Knight's Minne V
         2343,  1984, 3,    -- La Theine Millet
     }
 

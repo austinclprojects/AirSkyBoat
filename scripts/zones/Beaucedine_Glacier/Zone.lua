@@ -1,17 +1,18 @@
 -----------------------------------
 -- Zone: Beaucedine_Glacier (111)
 -----------------------------------
-local ID = require("scripts/zones/Beaucedine_Glacier/IDs")
-require("scripts/quests/i_can_hear_a_rainbow")
-require("scripts/globals/missions")
-require("scripts/globals/conquest")
-require("scripts/globals/zone")
+local ID = require('scripts/zones/Beaucedine_Glacier/IDs')
+require('scripts/quests/i_can_hear_a_rainbow')
+require('scripts/globals/conquest')
+require('scripts/globals/zone')
 -----------------------------------
 local zone_object = {}
 
 zone_object.onInitialize = function(zone)
-    UpdateNMSpawnPoint(ID.mob.HUMBABA)
-    GetMobByID(ID.mob.HUMBABA):setRespawnTime(math.random(3600, 4200))
+    if xi.settings.main.ENABLE_WOTG == 1 then
+        UpdateNMSpawnPoint(ID.mob.HUMBABA)
+        GetMobByID(ID.mob.HUMBABA):setRespawnTime(math.random(3600, 4200))
+    end
 
     xi.conq.setRegionalConquestOverseers(zone:getRegionID())
     xi.voidwalker.zoneOnInit(zone)
@@ -33,6 +34,12 @@ zone_object.onZoneIn = function(player, prevZone)
     end
 
     return cs
+end
+
+zone_object.onZoneOut = function(player)
+    if player:hasStatusEffect(xi.effect.BATTLEFIELD) then
+        player:delStatusEffect(xi.effect.BATTLEFIELD)
+    end
 end
 
 zone_object.onConquestUpdate = function(zone, updatetype)

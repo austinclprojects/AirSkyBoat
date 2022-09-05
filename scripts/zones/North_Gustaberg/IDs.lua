@@ -23,7 +23,7 @@ zones[xi.zone.NORTH_GUSTABERG] =
         NOTHING_OUT_OF_ORDINARY       = 6585,  -- There is nothing out of the ordinary here.
         FELLOW_MESSAGE_OFFSET         = 6600,  -- I'm ready. I suppose.
         CARRIED_OVER_POINTS           = 7182,  -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY       = 7183,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY       = 7183,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER                  = 7184,  -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         FISHING_MESSAGE_OFFSET        = 7238,  -- You can't fish here.
         DIG_THROW_AWAY                = 7251,  -- You dig up <item>, but your inventory is full. You regretfully throw the <item> away.
@@ -34,6 +34,7 @@ zones[xi.zone.NORTH_GUSTABERG] =
         REACH_WATER_FROM_HERE         = 7453,  -- You can reach the water from here.
         CONQUEST                      = 7489,  -- You've earned conquest points!
         ITEMS_ITEMS_LA_LA             = 7852,  -- You can hear a strange voice... Items, items, la la la la la
+        GARRISON_BASE                 = 7868,  -- Hm? What is this? %? How do I know this is not some [San d'Orian/Bastokan/Windurstian] trick?
         GOBLIN_SLIPPED_AWAY           = 7858,  -- The Goblin slipped away when you were not looking...
         PLAYER_OBTAINS_ITEM           = 8083,  -- <name> obtains <item>!
         UNABLE_TO_OBTAIN_ITEM         = 8084,  -- You were unable to obtain the item.
@@ -133,7 +134,6 @@ zones[xi.zone.NORTH_GUSTABERG] =
 
     npc =
     {
-        CASKET_BASE   = 17212023,
         OVERSEER_BASE = 17212060, -- Ennigreaud_RK in npc_list
     },
 }

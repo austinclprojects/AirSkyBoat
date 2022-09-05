@@ -17,7 +17,7 @@ zones[xi.zone.GUSTAV_TUNNEL] =
         NOTHING_OUT_OF_ORDINARY  = 6404,  -- There is nothing out of the ordinary here.
         FELLOW_MESSAGE_OFFSET    = 6419,  -- I'm ready. I suppose.
         CARRIED_OVER_POINTS      = 7001,  -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY  = 7002,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY  = 7002,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER             = 7003,  -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         GEOMAGNETRON_ATTUNED     = 7012,  -- Your <keyitem> has been attuned to a geomagnetic fount in the corresponding locale.
         CONQUEST_BASE            = 7057,  -- Tallying conquest results...
@@ -36,16 +36,11 @@ zones[xi.zone.GUSTAV_TUNNEL] =
     {
         GOBLINSAVIOR_HERONOX_PH   =
         {
-            [17645592] = 17645609, -- 153.000 -10.000 -53.000
             [17645605] = 17645609, -- 152.325 -10.702 -77.007
-            [17645604] = 17645609, -- 165.558 -10.647 -68.537
         },
         WYVERNPOACHER_DRACHLOX_PH =
         {
             [17645633] = 17645640, -- -100.000 1.000 -44.000
-            [17645634] = 17645640, -- -101.000 1.000 -29.000
-            [17645644] = 17645640, -- -165.598 0.218 -21.966
-            [17645643] = 17645640, -- -150.673 -0.067 -20.914
         },
         BAOBHAN_SITH_PH           =
         {
@@ -61,10 +56,6 @@ zones[xi.zone.GUSTAV_TUNNEL] =
         },
         UNGUR_PH                  =
         {
-            [17645764] = 17645755, -- -242.000 -0.577 120.000
-            [17645792] = 17645755, -- -88.000 0.735 190.000
-            [17645784] = 17645755, -- -123.856 0.239 223.303
-            [17645758] = 17645755, -- -277.000 -10.000 -34.000
             [17645754] = 17645755, -- -316.000 -9.000 3.000
         },
         AMIKIRI_PH                =
@@ -79,7 +70,6 @@ zones[xi.zone.GUSTAV_TUNNEL] =
     },
     npc =
     {
-        CASKET_BASE = 17645851,
     },
 }
 

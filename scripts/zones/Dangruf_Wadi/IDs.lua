@@ -17,7 +17,7 @@ zones[xi.zone.DANGRUF_WADI] =
         KEYITEM_OBTAINED         = 6552,  -- Obtained key item: <keyitem>.
         FELLOW_MESSAGE_OFFSET    = 6578,  -- I'm ready. I suppose.
         CARRIED_OVER_POINTS      = 7160,  -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY  = 7161,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY  = 7161,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER             = 7162,  -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         GEOMAGNETRON_ATTUNED     = 7171,  -- Your <keyitem> has been attuned to a geomagnetic fount in the corresponding locale.
         FISHING_MESSAGE_OFFSET   = 7216,  -- You can't fish here.
@@ -58,7 +58,6 @@ zones[xi.zone.DANGRUF_WADI] =
     },
     npc =
     {
-        CASKET_BASE        = 17559877,
         GEYSER_OFFSET      = 17559899,
         AN_EMPTY_VESSEL_QM = 17559911,
         TREASURE_CHEST     = 17559924,

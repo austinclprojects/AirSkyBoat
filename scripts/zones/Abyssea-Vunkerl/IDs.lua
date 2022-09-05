@@ -17,7 +17,7 @@ zones[xi.zone.ABYSSEA_VUNKERL] =
         KEYITEM_OBTAINED            = 6393, -- Obtained key item: <keyitem>.
         CRUOR_TOTAL                 = 6988, -- Obtained <number> cruor. (Total: <number>)
         CARRIED_OVER_POINTS         = 7001, -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY     = 7002, -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY     = 7002, -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER                = 7003, -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         LIGHTS_MESSAGE_1            = 7322, -- Visitant Light Intensity Pearlescent: <number> / Ebon: <number> Golden: <number> / Silvery: <number>
         LIGHTS_MESSAGE_2            = 7323, -- Azure: <number> / Ruby: <number> / Amber: <number>
@@ -99,7 +99,6 @@ zones[xi.zone.ABYSSEA_VUNKERL] =
             --  [17666598] = {'qm23',     {}, {xi.ki.DECAYED_DVERGR_TOOTH, xi.ki.PULSATING_SOULFLAYER_BEARD, xi.ki.CHIPPED_IMPS_OLIFANT}, 17666509}, -- Durinn
             --  [17666599] = {'qm24',     {},                                 {xi.ki.MALODOROUS_MARID_FUR, xi.ki.WARPED_SMILODON_CHOKER}, 17666510}, -- Karkadann
         },
-        STURDY_PYXIS_BASE = 17666615,
     },
 }
 

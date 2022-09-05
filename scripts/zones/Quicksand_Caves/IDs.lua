@@ -19,7 +19,7 @@ zones[xi.zone.QUICKSAND_CAVES] =
         NOW_IS_NOT_THE_TIME      = 6406,  -- Now is not the time for that!
         FELLOW_MESSAGE_OFFSET    = 6419,  -- I'm ready. I suppose.
         CARRIED_OVER_POINTS      = 7001,  -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY  = 7002,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY  = 7002,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER             = 7003,  -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         CONQUEST_BASE            = 7057,  -- Tallying conquest results...
         FISHING_MESSAGE_OFFSET   = 7216,  -- You can't fish here.
@@ -30,6 +30,7 @@ zones[xi.zone.QUICKSAND_CAVES] =
         SENSE_SOMETHING_EVIL     = 7365,  -- You sense something evil.
         YOU_FIND_NOTHING_OUT     = 7366,  -- You find nothing out of the ordinary.
         YOU_FIND_NOTHING         = 7367,  -- You find nothing.
+        SOMETHING_ATTACKING_YOU  = 7371,  -- Something is attacking from behind you!
         SOMETHING_IS_BURIED      = 7372,  -- Something is buried in this fallen pillar.
         SENSE_OMINOUS_PRESENCE   = 7376,  -- You sense an ominous presence...
         PLAYER_OBTAINS_ITEM      = 8284,  -- <name> obtains <item>!
@@ -102,6 +103,7 @@ zones[xi.zone.QUICKSAND_CAVES] =
         ANCIENT_VESSEL        = 17629642,
         TRIBUNUS_VII_I        = 17629643,
         GIRTABLULU            = 17629645,
+        NUSSKNACKER           = 17629403,
     },
     npc =
     {
@@ -112,7 +114,6 @@ zones[xi.zone.QUICKSAND_CAVES] =
             [3] = {479.000, -14.000, -815.000},
             [4] = {814.000, -14.000, -761.000}
         },
-        CASKET_BASE            = 17629671,
         ORNATE_DOOR_OFFSET     = 17629693,
         CHAINS_THAT_BIND_US_QM = 17629746,
         TREASURE_COFFER        = 17629747,

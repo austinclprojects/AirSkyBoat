@@ -9,7 +9,7 @@
 -- Aerns will generally not attempt to use this ability if no erasable effects exist on them.
 -----------------------------------
 require("scripts/globals/mobskills")
-require("scripts/settings/main")
+require("scripts/globals/settings")
 require("scripts/globals/status")
 -----------------------------------
 local mobskill_object = {}
@@ -25,10 +25,14 @@ mobskill_object.onMobSkillCheck = function(target, mob, skill)
 end
 
 mobskill_object.onMobWeaponSkill = function(target, mob, skill)
+    local effectcount = mob:eraseAllStatusEffect()
 
-    mob:eraseAllStatusEffect()
-
-    return 0
+    if effectcount == 0 then
+        skill:setMsg(xi.msg.basic.SKILL_NO_EFFECT)
+    else
+        skill:setMsg(xi.msg.basic.DISAPPEAR_NUM)
+    end
+    return effectcount
 end
 
 return mobskill_object

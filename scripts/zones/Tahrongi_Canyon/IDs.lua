@@ -19,7 +19,7 @@ zones[xi.zone.TAHRONGI_CANYON] =
         FELLOW_MESSAGE_OFFSET        = 6600,  -- I'm ready. I suppose.
         CRUOR_TOTAL                  = 7169,  -- Obtained <number> cruor. (Total: <number>)
         CARRIED_OVER_POINTS          = 7182,  -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY      = 7183,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY      = 7183,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER                 = 7184,  -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         FISHING_MESSAGE_OFFSET       = 7238,  -- You can't fish here.
         DIG_THROW_AWAY               = 7251,  -- You dig up <item>, but your inventory is full. You regretfully throw the <item> away.
@@ -56,9 +56,10 @@ zones[xi.zone.TAHRONGI_CANYON] =
         VOIDWALKER_UPGRADE_KI_2      = 11016, -- The <keyitem> takes on a deeper, richer hue and becomes <keyitem>!
         VOIDWALKER_BREAK_KI          = 11017, -- The <keyitem> shatters into tiny fragments.
         VOIDWALKER_OBTAIN_KI         = 11018, -- Obtained key item: <keyitem>!
+        LEARNS_SPELL                 = 11945, -- <name> learns <spell>!
+        UNCANNY_SENSATION            = 11947, -- You are assaulted by an uncanny sensation.
         COMMON_SENSE_SURVIVAL        = 11954, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
-
     mob =
     {
         SERPOPARD_ISHTAR_PH =
@@ -109,7 +110,6 @@ zones[xi.zone.TAHRONGI_CANYON] =
 
     npc =
     {
-        CASKET_BASE     = 17257008,
         SIGNPOST_OFFSET = 17257033,
 
         EXCAVATION =

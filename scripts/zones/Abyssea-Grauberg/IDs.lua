@@ -18,7 +18,7 @@ zones[xi.zone.ABYSSEA_GRAUBERG] =
         CRUOR_TOTAL                 = 6988,  -- Obtained <number> cruor. (Total: <number>)
         PLAYER_GAINED_EXPERIENCE    = 6999,  -- <name> gained <number> [points of experience/limit points].
         CARRIED_OVER_POINTS         = 7001,  -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY     = 7002,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY     = 7002,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER                = 7003,  -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         LIGHTS_MESSAGE_1            = 7322,  -- Visitant Light Intensity Pearlescent: <number> / Ebon: <number> Golden: <number> / Silvery: <number>
         LIGHTS_MESSAGE_2            = 7323,  -- Azure: <number> / Ruby: <number> / Amber: <number>
@@ -71,6 +71,28 @@ zones[xi.zone.ABYSSEA_GRAUBERG] =
     },
     mob =
     {
+        IRONCLAD_SUNDERER            = 17818041,
+        NINGISHZIDA                  = 17818042,
+        TEUGGHIA                     = 17818043,
+        BOMBLIX_FLAMEFINGER          = 17818044,
+        TEEKEESELCHEN                = 17818045,
+        MINARUJA                     = 17818046,
+        XIBALBA                      = 17818047,
+        IKA_ROA                      = 17818048,
+        LORELEI                      = 17818049,
+        BURSTROX_POWDERPATE          = 17818050,
+        RAJA_1                       = 17818051,
+        ALFARD_1                     = 17818052,
+        AZDAJA_1                     = 17818053,
+        AMPHITRITE_1                 = 17818054,
+        RAJA_2                       = 17818055,
+        ALFARD_2                     = 17818056,
+        AZDAJA_2                     = 17818057,
+        AMPHITRITE_2                 = 17818058,
+        RAJA_3                       = 17818059,
+        ALFARD_3                     = 17818060,
+        AZDAJA_3                     = 17818061,
+        AMPHITRITE_3                 = 17818062,
     },
     npc =
     {
@@ -110,7 +132,6 @@ zones[xi.zone.ABYSSEA_GRAUBERG] =
             17818224,
             17818225,
         },
-        STURDY_PYXIS_BASE = 17818119,
     },
 }
 

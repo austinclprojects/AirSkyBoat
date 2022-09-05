@@ -17,7 +17,7 @@ zones[xi.zone.ABYSSEA_MISAREAUX] =
         KEYITEM_OBTAINED            = 6393, -- Obtained key item: <keyitem>.
         CRUOR_TOTAL                 = 6988, -- Obtained <number> cruor. (Total: <number>)
         CARRIED_OVER_POINTS         = 7001, -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY     = 7002, -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY     = 7002, -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER                = 7003, -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         LIGHTS_MESSAGE_1            = 7322, -- Visitant Light Intensity Pearlescent: <number> / Ebon: <number> Golden: <number> / Silvery: <number>
         LIGHTS_MESSAGE_2            = 7323, -- Azure: <number> / Ruby: <number> / Amber: <number>
@@ -99,7 +99,6 @@ zones[xi.zone.ABYSSEA_MISAREAUX] =
             --  [17662578] = {'qm23',          {}, {xi.ki.BLOODSTAINED_BUGARD_FANG, xi.ki.GNARLED_LIZARD_NAIL, xi.ki.MOLTED_PEISTE_SKIN}, 17662488}, -- Sobek
             --  [17662579] = {'qm24',          {},                           {xi.ki.BLAZING_CLUSTER_SOUL, xi.ki.SCALDING_IRONCLAD_SPIKE}, 17662489}, -- Ironclad Pulverizor
         },
-        STURDY_PYXIS_BASE = 17662595,
     },
 }
 

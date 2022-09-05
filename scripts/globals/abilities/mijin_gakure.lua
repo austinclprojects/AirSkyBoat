@@ -7,7 +7,7 @@
 -----------------------------------
 require("scripts/globals/jobpoints")
 require("scripts/globals/mobskills")
-require("scripts/settings/main")
+require("scripts/globals/settings")
 require("scripts/globals/status")
 -----------------------------------
 local ability_object = {}
@@ -24,6 +24,10 @@ ability_object.onUseAbility = function(player, target, ability)
     -- Job Point Bonus (3% per Level)
     dmg = dmg * (1 + (player:getJobPointLevel(xi.jp.MIJIN_GAKURE_EFFECT) * 0.03))
     dmg = dmg * resist
+
+    if player:hasStatusEffect(xi.effect.WEAKNESS) then
+        player:delStatusEffect(xi.effect.WEAKNESS)
+    end
 
     dmg = utils.stoneskin(target, dmg)
     target:takeDamage(dmg, player, xi.attackType.SPECIAL, xi.damageType.ELEMENTAL)

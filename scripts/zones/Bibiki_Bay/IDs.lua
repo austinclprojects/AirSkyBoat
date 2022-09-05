@@ -18,7 +18,7 @@ zones[xi.zone.BIBIKI_BAY] =
         NOTHING_OUT_OF_ORDINARY = 6404, -- There is nothing out of the ordinary here.
         FELLOW_MESSAGE_OFFSET   = 6419, -- I'm ready. I suppose.
         CARRIED_OVER_POINTS     = 7001, -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY = 7002, -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY = 7002, -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER            = 7003, -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         CONQUEST_BASE           = 7057, -- Tallying conquest results...
         POHKA_SHOP_DIALOG       = 7228, -- Hey buddy, need a rod? I've got loads of state-of-the-art, top-of-the-line, high quality rods right here waitin' fer ya! Whaddya say?
@@ -43,6 +43,8 @@ zones[xi.zone.BIBIKI_BAY] =
         LEFT_BILLET             = 7499, -- You use your <item>. (<number> trip[/s] remaining)
         END_BILLET              = 7500, -- You use up your <item>.
         NOTHING_LEFT_INTEREST   = 7617, -- There is nothing left of interest here.
+        SHEN_QM                 = 7618, -- Innumerable shrimp shells are floating in the water here.
+        SHEN_SPAWN              = 7619, -- The <item> begins skimming quietly across the surface of the water. What's this!? An enormous creature is chasing after it from below!!!
         COMMON_SENSE_SURVIVAL   = 8645, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
         NEWS_BILLET             = 8668, -- <item> has been [added to your list of favorites/removed from your list of favorites].
     },

@@ -17,7 +17,7 @@ zones[xi.zone.DEN_OF_RANCOR] =
         NOTHING_OUT_OF_ORDINARY  = 6404,  -- There is nothing out of the ordinary here.
         FELLOW_MESSAGE_OFFSET    = 6419,  -- I'm ready. I suppose.
         CARRIED_OVER_POINTS      = 7001,  -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY  = 7002,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY  = 7002,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER             = 7003,  -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         CONQUEST_BASE            = 7057,  -- Tallying conquest results...
         LANTERN_OFFSET           = 7216,  -- The grating will not budge.
@@ -66,13 +66,16 @@ zones[xi.zone.DEN_OF_RANCOR] =
             [17432978] = 17432974,
             [17432979] = 17432974,
         },
+        SOZU_BLIBERRY_PH =
+        {
+            [17432608] = 17432609,
+        },
         MIMIC       = 17432583,
         HAKUTAKU    = 17433005,
         MOKUMOKUREN = 17433006,
     },
     npc =
     {
-        CASKET_BASE     = 17433024,
         LANTERN_OFFSET  = 17433047,
         DROP_GATE       = 17433051,
         TREASURE_COFFER = 17433077,
