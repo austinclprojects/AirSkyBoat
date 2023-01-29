@@ -171,6 +171,11 @@ xi.additionalEffect.attack = function(attacker, defender, baseAttackDamage, item
             chance = chance / 1.5
         end
     end
+    
+    -- If player is level synced below the level of the item, do no proc
+    if item:getReqLvl() > attacker:getMainLvl() then
+        return 0, 0, 0
+    end
 
     -- If we're not going to proc, lets not execute all those checks!
     if math.random(1, 100) > chance then
